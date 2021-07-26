@@ -19,18 +19,21 @@ public class MainActivity extends AppCompatActivity {
 
         EditText editUsername = findViewById(R.id.editUsername);
         EditText editPassword = findViewById(R.id.editPassword);
-        if (editUsername.getText().toString().equals(""))
+        if (editUsername.getText().toString().equals("") || editPassword.getText().toString().equals(""))
         {
             System.out.println("empty");
+            Toast.makeText(this, "Missing username or password, please try again", Toast.LENGTH_SHORT).show();
         }
         else
+        {
             System.out.println(editUsername.getText().toString());
-        if (editPassword.getText().toString().equals(""))
-        {
-            System.out.println("empty");
-        }
-        else
             System.out.println(editPassword.getText().toString());
-        Toast.makeText(this, "Login successfully", Toast.LENGTH_SHORT).show();
+            Toast.makeText(this, "Login successfully", Toast.LENGTH_SHORT).show();
+        }
+
+    }
+
+    public void onClickForgotPassword(View view){
+        Toast.makeText(this, "Test for new password", Toast.LENGTH_SHORT).show();
     }
 }
