@@ -29,6 +29,8 @@ public class MainActivity extends AppCompatActivity {
             System.out.println(editUsername.getText().toString());
             System.out.println(editPassword.getText().toString());
             Toast.makeText(this, "Login successfully", Toast.LENGTH_SHORT).show();
+            if (editUsername.getText().toString().equals("student"))
+                setContentView(R.layout.student_menu);
         }
 
     }
