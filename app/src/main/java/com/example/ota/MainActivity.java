@@ -2,6 +2,7 @@ package com.example.ota;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.EditText;
@@ -30,7 +31,7 @@ public class MainActivity extends AppCompatActivity {
             System.out.println(editPassword.getText().toString());
             Toast.makeText(this, "Login successfully", Toast.LENGTH_SHORT).show();
             if (editUsername.getText().toString().equals("student"))
-                setContentView(R.layout.student_menu);
+                startActivity(new Intent(MainActivity.this, StudentActivity.class));
         }
 
     }

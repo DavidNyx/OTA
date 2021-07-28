@@ -9,6 +9,7 @@
         android:roundIcon="@mipmap/ota_icon"
         android:supportsRtl="true"
         android:theme="@style/Theme.OTA">
+        <activity android:name=".StudentActivity"></activity>
         <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

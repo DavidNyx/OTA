@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/white"
+    tools:context=".StudentActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <Button
+            android:id="@+id/view_attendanceButton"
+            android:layout_width="277dp"
+            android:layout_height="64dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:background="@color/purple_200"
+            android:drawableLeft="@mipmap/attendance"
+            android:drawablePadding="10dp"
+
+            android:paddingLeft="1dp"
+            android:text="View attendace list"
+            android:textColor="@color/white"
+            android:textSize="18sp"
+            android:textStyle="bold">
+
+        </Button>
+
+        <Button
+            android:id="@+id/view_classNotificationButton"
+            android:layout_width="277dp"
+            android:layout_height="64dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:background="@color/purple_200"
+            android:drawableLeft="@mipmap/notification"
+            android:drawablePadding="10dp"
+            android:drawableTint="@color/white"
+            android:paddingLeft="-5dp"
+            android:text="View class notification"
+            android:textColor="@color/white"
+            android:textSize="18sp"
+            android:textStyle="bold">
+
+        </Button>
+
+        <Button
+            android:id="@+id/view_classScheduleButton"
+            android:layout_width="277dp"
+            android:layout_height="64dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:background="@color/purple_200"
+            android:drawableLeft="@mipmap/timetable"
+            android:drawablePadding="10dp"
+            android:paddingLeft="5dp"
+            android:text="View class schedule"
+            android:textColor="@color/white"
+            android:textSize="18sp"
+            android:textStyle="bold">
+
+        </Button>
+
+        <Button
+            android:id="@+id/view_gradeButton"
+            android:layout_width="277dp"
+            android:layout_height="64dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:background="@color/purple_200"
+            android:drawableLeft="@mipmap/grade"
+            android:drawablePadding="10dp"
+            android:paddingLeft="1dp"
+            android:text="View grade"
+            android:textColor="@color/white"
+            android:textSize="18sp"
+            android:textStyle="bold">
+
+        </Button>
+
+        <Button
+            android:id="@+id/view_feeButton"
+            android:layout_width="277dp"
+            android:layout_height="64dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:background="@color/purple_200"
+            android:drawableLeft="@mipmap/money"
+            android:drawablePadding="10dp"
+            android:paddingLeft="0dp"
+            android:text="View tuition fee"
+            android:textColor="@color/white"
+            android:textSize="18sp"
+            android:textStyle="bold">
+
+        </Button>
+
+        <Button
+            android:id="@+id/view_mapButton"
+            android:layout_width="277dp"
+            android:layout_height="64dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:background="@color/purple_200"
+            android:drawableLeft="@mipmap/map"
+            android:drawablePadding="10dp"
+            android:paddingLeft="0dp"
+            android:text="View map"
+            android:textColor="@color/white"
+            android:textSize="18sp"
+            android:textStyle="bold">
+
+        </Button>
+
+        <Button
+            android:id="@+id/setting"
+            android:layout_width="60dp"
+            android:layout_height="65dp"
+            android:drawableTop="@mipmap/setting"
+            android:backgroundTint="@color/white"
+            >
+
+
+        </Button>
+    </LinearLayout>
+
+
+
+</ScrollView>
