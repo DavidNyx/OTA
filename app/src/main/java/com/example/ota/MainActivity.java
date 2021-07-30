@@ -6,6 +6,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.EditText;
 import android.widget.Toast;
+import android.content.Intent;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -31,6 +32,11 @@ public class MainActivity extends AppCompatActivity {
             Toast.makeText(this, "Login successfully", Toast.LENGTH_SHORT).show();
         }
 
+        if (editUsername.getText().toString().equals("student"))
+            startActivity(new Intent(MainActivity.this, StudentActivity.class));
+
+        if (editUsername.getText().toString().equals("parents"))
+            startActivity(new Intent(MainActivity.this, StudentActivity.class));
     }
 
     public void onClickForgotPassword(View view){
