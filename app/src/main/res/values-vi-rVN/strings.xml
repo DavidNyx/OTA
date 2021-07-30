@@ -6,4 +6,12 @@
     <string name="username">Tên đăng nhập</string>
     <string name="password">Mật khẩu</string>
     <string name="forgotPassword">Quên mật khẩu?</string>
+    <string name="parentsMenu">Parents Menu</string>
+    <string name="viewClassSchedual">Class schedual</string>
+    <string name="viewGrade">Grade</string>
+    <string name="viewAttendanceList">Attendance List</string>
+    <string name="viewMap">Map</string>
+    <string name="sendAbsentLetter">Absent Letter</string>
+    <string name="viewTuitionFee">Tuition Fee</string>
+    <string name="logOut">Log Out</string>
 </resources>
