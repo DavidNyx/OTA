@@ -10,7 +10,13 @@
     <string name="viewAttendance">Xem danh sách điểm danh</string>
     <string name="viewClassNotification">Xem thông báo lớp</string>
     <string name="viewClassSchedule">Xem thời khóa biểu lớp</string>
-    <string name="viewGrade">Xem điểm</string>
     <string name="viewFee">Xem học phí</string>
-    <string name="viewMap">Xem bản đồ</string>
+    <string name="parentsMenu">Parents Menu</string>
+    <string name="viewClassSchedual">Thời khóa biểu</string>
+    <string name="viewGrade">Điểm số</string>
+    <string name="viewAttendanceList">Điểm danh</string>
+    <string name="viewMap">Bản đồ</string>
+    <string name="sendAbsentLetter">Xin phép nghỉ học</string>
+    <string name="viewTuitionFee">Học phí</string>
+    <string name="logOut">Thoát tài khoản</string>
 </resources>
