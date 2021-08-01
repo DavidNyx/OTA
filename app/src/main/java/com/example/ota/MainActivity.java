@@ -39,7 +39,7 @@ public class MainActivity extends AppCompatActivity {
             startActivity(new Intent(MainActivity.this, StudentActivity.class));
 
         if (editUsername.getText().toString().equals("parents"))
-            startActivity(new Intent(MainActivity.this, StudentActivity.class));
+            startActivity(new Intent(MainActivity.this, ParentsActivity.class));
     }
 
     public void onClickForgotPassword(View view){
