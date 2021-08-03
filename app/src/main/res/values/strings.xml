@@ -5,7 +5,12 @@
     <string name="username">Username</string>
     <string name="password">Password</string>
     <string name="forgotPassword">Forgot password?</string>
-    <string name="parentMenu">Parent Menu</string>
+    <string name="studentMenu">Student Menu</string>
+    <string name="viewAttendance">View Attendace List</string>
+    <string name="viewClassNotification">View class notification</string>
+    <string name="viewClassSchedule">View Class Schedule</string>
+    <string name="viewFee">View Tuition Fee</string>
+    <string name="parentsMenu">Parents Menu</string>
     <string name="viewClassSchedual">Class schedual</string>
     <string name="viewGrade">Grade</string>
     <string name="viewAttendanceList">Attendance List</string>
