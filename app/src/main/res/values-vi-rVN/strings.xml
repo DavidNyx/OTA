@@ -2,21 +2,18 @@
 <resources>
     <string name="app_name">OTA</string>
     <string name="welcome">Chào mừng đến với OTA</string>
-    <string name="login">Đăng nhập</string>
-    <string name="username">Tên đăng nhập</string>
-    <string name="password">Mật khẩu</string>
+    <string name="logIn">Đăng nhập</string>
+    <string name="Username">Tên đăng nhập</string>
+    <string name="Password">Mật khẩu</string>
     <string name="forgotPassword">Quên mật khẩu?</string>
-    <string name="studentMenu">Menu học sinh</string>
-    <string name="viewAttendance">Xem danh sách điểm danh</string>
-    <string name="viewClassNotification">Xem thông báo lớp</string>
-    <string name="viewClassSchedule">Xem thời khóa biểu lớp</string>
-    <string name="viewFee">Xem học phí</string>
-    <string name="parentsMenu">Parents Menu</string>
-    <string name="viewClassSchedual">Thời khóa biểu</string>
-    <string name="viewGrade">Điểm số</string>
-    <string name="viewAttendanceList">Điểm danh</string>
-    <string name="viewMap">Bản đồ</string>
-    <string name="sendAbsentLetter">Xin phép nghỉ học</string>
-    <string name="viewTuitionFee">Học phí</string>
+    <string name="StudentMenu">Học sinh</string>
+    <string name="ParentsMenu">Phụ huynh</string>
+    <string name="Attendance">Điểm danh</string>
+    <string name="ClassNotification">Thông báo lớp</string>
+    <string name="ClassSchedule">Thời khóa biểu</string>
+    <string name="Grade">Điểm số</string>
+    <string name="Map">Bản đồ</string>
+    <string name="AbsentLetter">Đơn xin nghỉ học</string>
+    <string name="TuitionFee">Học phí</string>
     <string name="logOut">Thoát tài khoản</string>
 </resources>
