@@ -6,8 +6,8 @@
     <string name="Username">Tên đăng nhập</string>
     <string name="Password">Mật khẩu</string>
     <string name="forgotPassword">Quên mật khẩu?</string>
-    <string name="StudentMenu">Học sinh</string>
-    <string name="ParentsMenu">Phụ huynh</string>
+    <string name="Student">Học sinh</string>
+    <string name="Parents">Phụ huynh</string>
     <string name="Attendance">Điểm danh</string>
     <string name="ClassNotification">Thông báo lớp</string>
     <string name="ClassSchedule">Thời khóa biểu</string>

@@ -5,8 +5,8 @@
     <string name="Username">Username</string>
     <string name="Password">Password</string>
     <string name="forgotPassword">Forgot password?</string>
-    <string name="StudentMenu">Student Menu</string>
-    <string name="ParentsMenu">Parents Menu</string>
+    <string name="Student">Student</string>
+    <string name="Parents">Parents</string>
     <string name="Attendance">Attendance</string>
     <string name="ClassNotification">Class Notification</string>
     <string name="ClassSchedule">Class Schedule</string>
