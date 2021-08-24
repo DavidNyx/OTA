@@ -36,6 +36,12 @@ public class MainActivity extends AppCompatActivity {
 
             if (editUsername.getText().toString().equals("parents"))
                 startActivity(new Intent(MainActivity.this, ParentsActivity.class));
+
+            if (editUsername.getText().toString().equals("administrator"))
+                startActivity(new Intent(MainActivity.this, AdministratorActivity.class));
+
+            if (editUsername.getText().toString().equals("teacher"))
+                startActivity(new Intent(MainActivity.this, TeacherActivity.class));
         }
 
 

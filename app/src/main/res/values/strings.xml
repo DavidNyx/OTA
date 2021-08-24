@@ -7,6 +7,8 @@
     <string name="forgotPassword">Forgot password?</string>
     <string name="Student">Student</string>
     <string name="Parents">Parents</string>
+    <string name="Administrator">Administrator</string>
+    <string name="Teacher">Teacher</string>
     <string name="Attendance">Attendance</string>
     <string name="ClassNotification">Class Notification</string>
     <string name="ClassSchedule">Class Schedule</string>
@@ -14,5 +16,9 @@
     <string name="Map">Map</string>
     <string name="AbsentLetter">Absent Letter</string>
     <string name="TuitionFee">Tuition Fee</string>
+    <string name="Account">Account</string>
+    <string name="Class">Class</string>
+    <string name="Schedule">Schedule</string>
+    <string name="Notification">Notification</string>
     <string name="logOut">Log Out</string>
 </resources>

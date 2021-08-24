@@ -16,13 +16,13 @@
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
         <TextView
-            android:id="@+id/textStudent"
+            android:id="@+id/textTeacher"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="16dp"
             android:layout_marginTop="10dp"
             android:layout_marginBottom="10dp"
-            android:text="@string/Student"
+            android:text="@string/Teacher"
             android:textColor="#ffffff"
             android:textSize="30sp"
             android:textStyle="bold"
@@ -88,21 +88,6 @@
             app:layout_constraintTop_toBottomOf="@+id/view_classScheduleButton" />
 
         <Button
-            android:id="@+id/view_feeButton"
-            android:layout_width="300dp"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="32dp"
-            android:background="#2196F3"
-            android:text="@string/TuitionFee"
-            android:textColor="#ffffff"
-            android:textSize="18sp"
-            android:textStyle="bold"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.498"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/view_gradeButton" />
-
-        <Button
             android:id="@+id/view_mapButton"
             android:layout_width="300dp"
             android:layout_height="wrap_content"
@@ -114,7 +99,7 @@
             android:textStyle="bold"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/view_feeButton"
+            app:layout_constraintTop_toBottomOf="@+id/view_gradeButton"
             />
 
         <Button
@@ -129,7 +114,7 @@
             android:textColor="#ffffff"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/view_mapButton" />
+            app:layout_constraintTop_toBottomOf="@+id/view_gradeButton" />
 
         <View
             android:layout_width="wrap_content"

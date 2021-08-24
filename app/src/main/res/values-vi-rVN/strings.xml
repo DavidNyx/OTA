@@ -8,6 +8,8 @@
     <string name="forgotPassword">Quên mật khẩu?</string>
     <string name="Student">Học sinh</string>
     <string name="Parents">Phụ huynh</string>
+    <string name="Administrator">Giáo vụ</string>
+    <string name="Teacher">Giáo viên</string>
     <string name="Attendance">Điểm danh</string>
     <string name="ClassNotification">Thông báo lớp</string>
     <string name="ClassSchedule">Thời khóa biểu</string>
@@ -15,5 +17,9 @@
     <string name="Map">Bản đồ</string>
     <string name="AbsentLetter">Đơn xin nghỉ học</string>
     <string name="TuitionFee">Học phí</string>
+    <string name="Account">Tài khoản</string>
+    <string name="Class">Lớp học</string>
+    <string name="Schedule">Thời khóa biểu</string>
+    <string name="Notification">Thông báo</string>
     <string name="logOut">Thoát tài khoản</string>
 </resources>
