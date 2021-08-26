@@ -17,5 +17,14 @@
     <string name="viewMap">Map</string>
     <string name="sendAbsentLetter">Absent Letter</string>
     <string name="viewTuitionFee">Tuition Fee</string>
+    <string name="viewSetting">Setting</string>
     <string name="logOut">Log Out</string>
+    <string name="Send">Send</string>
+    <string name="Email">Email</string>
+    <string name="Subject">Subject</string>
+    <string name="Message">Message</string>
+    <string name="chanelName">Chanel 1</string>
+    <string name="channelDescription">This is Chanel 1</string>
+    <!-- Strings used for fragments for navigation -->
+
 </resources>

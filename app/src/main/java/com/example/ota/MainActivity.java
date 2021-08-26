@@ -8,7 +8,7 @@ import android.view.View;
 import android.widget.EditText;
 import android.widget.Toast;
 import android.content.Intent;
-
+import android.app.Fragment;
 public class MainActivity extends AppCompatActivity {
 
     @Override
@@ -40,6 +40,9 @@ public class MainActivity extends AppCompatActivity {
 
         if (editUsername.getText().toString().equals("parents"))
             startActivity(new Intent(MainActivity.this, ParentsActivity.class));
+
+        if (editUsername.getText().toString().equals("test"))
+            startActivity(new Intent(MainActivity.this, test.class));
     }
 
     public void onClickForgotPassword(View view){

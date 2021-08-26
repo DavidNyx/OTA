@@ -17,6 +17,13 @@
     <string name="viewAttendanceList">Điểm danh</string>
     <string name="viewMap">Bản đồ</string>
     <string name="sendAbsentLetter">Xin phép nghỉ học</string>
-    <string name="viewTuitionFee">Học phí</string>
+    <string name="viewTuitionFee">Học phí</string>\
+    <string name="viewSetting">Cài đặt</string>
     <string name="logOut">Thoát tài khoản</string>
+    <string name="Send">Gửi</string>
+    <string name="Email">Email</string>
+    <string name="Subject">Chủ đề</string>
+    <string name="Message">Nội dung</string>
+    <string name="chanelName">Kênh 1</string>
+    <string name="channelDescription">Đây là kênh 1</string>
 </resources>

@@ -5,6 +5,6 @@
     <size android:height="50dp"
         android:width="50dp"/>
     <gradient android:angle="45"
-        android:startColor="#ff00"
-        android:endColor="#0400ff"/>
+        android:startColor="#33ff33"
+        android:endColor="#FFFF33"/>
 </shape>

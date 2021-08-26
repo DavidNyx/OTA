@@ -3,21 +3,26 @@ package com.example.ota;
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
-import android.graphics.Color;
-import android.graphics.drawable.ColorDrawable;
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuInflater;
 import android.view.MenuItem;
+import android.view.View;
+import android.widget.Toast;
 
-public class ParentsActivity extends AppCompatActivity {
+import androidx.appcompat.widget.Toolbar;
+
+public class test extends AppCompatActivity {
+    Toolbar toolbar;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_parents);
+        setContentView(R.layout.activity_test);
+        //toolbar = findViewById(R.id.myToolBar);
+        //setSupportActionBar(toolbar);
         getSupportActionBar().setTitle("OTA");
         getSupportActionBar().setSubtitle("Parent Menu");
-        getSupportActionBar().setBackgroundDrawable(new ColorDrawable(Color.parseColor("#e600ff")));
     }
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
@@ -31,5 +36,8 @@ public class ParentsActivity extends AppCompatActivity {
                 break;
         }
         return super.onOptionsItemSelected(item);
+    }
+    public void onClickAbsentLetter(View view){
+        startActivity(new Intent(test.this, Email.class));
     }
 }

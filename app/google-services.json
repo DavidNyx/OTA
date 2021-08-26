@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "394605985869",
+    "project_id": "otap-46429",
+    "storage_bucket": "otap-46429.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:394605985869:android:fc5e082fe3413728721c04",
+        "android_client_info": {
+          "package_name": "com.example.ota"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "394605985869-n298p5ncuf8err185qboi7unksssvuuc.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDiqidybJ9eMdjlr8eP1TIbyLwavMIImvo"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "394605985869-n298p5ncuf8err185qboi7unksssvuuc.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
