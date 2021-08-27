@@ -1,8 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.ota">
-    <uses-permission android:name="android.permission.INTERNET"/>
-    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
     <application
         android:name=".Chanel"
         android:allowBackup="true"
@@ -11,6 +13,8 @@
         android:roundIcon="@mipmap/ota_icon"
         android:supportsRtl="true"
         android:theme="@style/Theme.OTA">
+        <activity android:name=".Account"></activity>
+
         <service
             android:name=".fcm.MyFirebaseMessagingService"
             android:exported="false">
@@ -18,7 +22,8 @@
                 <action android:name="com.google.firebase.MESSAGING_EVENT" />
             </intent-filter>
         </service>
-        <activity android:name=".Email"></activity>
+
+        <activity android:name=".Email" />
         <activity
             android:name=".test"
             android:theme="@style/Theme.OTA" />
