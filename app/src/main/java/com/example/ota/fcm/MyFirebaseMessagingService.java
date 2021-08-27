@@ -12,6 +12,8 @@ import com.example.ota.R;
 import com.google.firebase.messaging.FirebaseMessagingService;
 import com.google.firebase.messaging.RemoteMessage;
 
+import java.util.Date;
+
 public class MyFirebaseMessagingService extends FirebaseMessagingService {
     @Override
     public void onMessageReceived(@NonNull RemoteMessage remoteMessage){
@@ -33,7 +35,10 @@ public class MyFirebaseMessagingService extends FirebaseMessagingService {
         Notification notification=notificationBuilder.build();
         NotificationManager notificationManager=(NotificationManager) getSystemService(Context.NOTIFICATION_SERVICE);
         if(notificationManager!=null){
-            notificationManager.notify(1,notification);
+            notificationManager.notify(getNotificationId(),notification);
         }
+    }
+    private int getNotificationId(){
+        return (int) new Date().getTime();
     }
 }
