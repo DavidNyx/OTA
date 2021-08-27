@@ -26,7 +26,7 @@ import java.util.HashMap;
 import java.util.Map;
 
 public class MainActivity extends AppCompatActivity {
-    private String url = "https://ota-be-server.herokuapp.com/linkserver/account/login";
+    private String url = "https://ota-be-server.herokuapp.com/linkserver/account/login/";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -58,7 +58,7 @@ public class MainActivity extends AppCompatActivity {
             }
             Log.d("a",data.toString());
             final String url = "https://ota-be-server.herokuapp.com";///account/login
-            JsonObjectRequest jsonObjectRequest = new JsonObjectRequest(Request.Method.GET, url, data,
+            JsonObjectRequest jsonObjectRequest = new JsonObjectRequest(Request.Method.POST, url, data,
                     new Response.Listener<JSONObject>() {
                         @Override
                         public void onResponse(JSONObject response) {
