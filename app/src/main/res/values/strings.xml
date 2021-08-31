@@ -20,5 +20,6 @@
     <string name="Class">Class</string>
     <string name="Schedule">Schedule</string>
     <string name="Notification">Notification</string>
+    <string name="Setting">Setting</string>
     <string name="logOut">Log Out</string>
 </resources>
