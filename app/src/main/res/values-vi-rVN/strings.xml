@@ -14,6 +14,7 @@
     <string name="Teacher">Giáo viên</string>
     <string name="Attendance">Điểm danh</string>
     <string name="ViewAttendance">Xem phiếu điểm danh</string>
+    <string name="CheckAttendance">Điểm danh lớp</string>
     <string name="ClassNotification">Thông báo lớp</string>
     <string name="ClassSchedule">Thời khóa biểu</string>
     <string name="Grade">Điểm số</string>

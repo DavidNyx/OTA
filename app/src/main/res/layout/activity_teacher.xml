@@ -9,7 +9,7 @@
         android:layout_height="wrap_content">
 
         <Button
-            android:id="@+id/view_attendanceButton"
+            android:id="@+id/attendanceButton"
             android:layout_width="300dp"
             android:layout_height="wrap_content"
             android:layout_marginTop="35dp"
@@ -24,7 +24,7 @@
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
         <Button
-            android:id="@+id/view_classNotificationButton"
+            android:id="@+id/classNotificationButton"
             android:layout_width="300dp"
             android:layout_height="wrap_content"
             android:layout_marginTop="35dp"
@@ -35,10 +35,10 @@
             android:textStyle="bold"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/view_attendanceButton"/>
+            app:layout_constraintTop_toBottomOf="@id/attendanceButton"/>
 
         <Button
-            android:id="@+id/view_classScheduleButton"
+            android:id="@+id/classScheduleButton"
             android:layout_width="300dp"
             android:layout_height="wrap_content"
             android:layout_marginTop="32dp"
@@ -50,10 +50,10 @@
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.501"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/view_classNotificationButton" />
+            app:layout_constraintTop_toBottomOf="@id/classNotificationButton" />
 
         <Button
-            android:id="@+id/view_gradeButton"
+            android:id="@+id/gradeButton"
             android:layout_width="300dp"
             android:layout_height="wrap_content"
             android:layout_marginTop="35dp"
@@ -64,25 +64,10 @@
             android:textStyle="bold"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/view_classScheduleButton" />
+            app:layout_constraintTop_toBottomOf="@id/classScheduleButton" />
 
         <Button
-            android:id="@+id/view_mapButton"
-            android:layout_width="300dp"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="35dp"
-            android:background="@drawable/button"
-            android:text="@string/Map"
-            android:textColor="#ffffff"
-            android:textSize="18sp"
-            android:textStyle="bold"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/view_gradeButton"
-            />
-
-        <Button
-            android:id="@+id/view_logOutButton"
+            android:id="@+id/logOutButton"
             android:layout_width="300dp"
             android:layout_height="wrap_content"
             android:layout_marginTop="35dp"
@@ -93,7 +78,7 @@
             android:textColor="#ffffff"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/view_gradeButton" />
+            app:layout_constraintTop_toBottomOf="@id/gradeButton" />
 
         <View
             android:layout_width="wrap_content"
@@ -101,7 +86,7 @@
             android:layout_marginTop="35dp"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/view_logOutButton" />
+            app:layout_constraintTop_toBottomOf="@+id/logOutButton" />
     </androidx.constraintlayout.widget.ConstraintLayout>
 
 </ScrollView>

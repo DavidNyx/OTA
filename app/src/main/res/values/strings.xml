@@ -13,6 +13,7 @@
     <string name="Teacher">Teacher</string>
     <string name="Attendance">Attendance</string>
     <string name="ViewAttendance">View attendance</string>
+    <string name="CheckAttendance"> Check attendance</string>
     <string name="ClassNotification">Class Notification</string>
     <string name="ClassSchedule">Class Schedule</string>
     <string name="Grade">Grade</string>

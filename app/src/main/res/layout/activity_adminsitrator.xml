@@ -8,7 +8,7 @@
         android:layout_height="wrap_content">
 
         <Button
-            android:id="@+id/view_accountButton"
+            android:id="@+id/accountButton"
             android:layout_width="300dp"
             android:layout_height="wrap_content"
             android:layout_marginTop="35dp"
@@ -22,7 +22,7 @@
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
         <Button
-            android:id="@+id/view_classButton"
+            android:id="@+id/classButton"
             android:layout_width="300dp"
             android:layout_height="wrap_content"
             android:layout_marginTop="35dp"
@@ -33,10 +33,10 @@
             android:textStyle="bold"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/view_accountButton"/>
+            app:layout_constraintTop_toBottomOf="@id/accountButton"/>
 
         <Button
-            android:id="@+id/view_scheduleButton"
+            android:id="@+id/scheduleButton"
             android:layout_width="300dp"
             android:layout_height="wrap_content"
             android:layout_marginTop="32dp"
@@ -48,10 +48,10 @@
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.501"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/view_classButton" />
+            app:layout_constraintTop_toBottomOf="@id/classButton" />
 
         <Button
-            android:id="@+id/view_notificationButton"
+            android:id="@+id/notificationButton"
             android:layout_width="300dp"
             android:layout_height="wrap_content"
             android:layout_marginTop="35dp"
@@ -62,10 +62,10 @@
             android:textStyle="bold"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/view_scheduleButton" />
+            app:layout_constraintTop_toBottomOf="@id/scheduleButton" />
 
         <Button
-            android:id="@+id/view_logOutButton"
+            android:id="@+id/logOutButton"
             android:layout_width="300dp"
             android:layout_height="wrap_content"
             android:layout_marginTop="35dp"
@@ -76,7 +76,7 @@
             android:textStyle="bold"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/view_notificationButton"
+            app:layout_constraintTop_toBottomOf="@id/notificationButton"
             android:onClick="onClickLogout"/>
 
         <View
@@ -85,7 +85,7 @@
             android:layout_marginTop="35dp"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/view_logOutButton" />
+            app:layout_constraintTop_toBottomOf="@id/logOutButton" />
     </androidx.constraintlayout.widget.ConstraintLayout>
 
 </ScrollView>
