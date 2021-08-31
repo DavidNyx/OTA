@@ -21,15 +21,12 @@ public class MainActivity extends AppCompatActivity {
         EditText editUsername = findViewById(R.id.editUsername);
         EditText editPassword = findViewById(R.id.editPassword);
         if (editUsername.getText().toString().equals("") || editPassword.getText().toString().equals(""))
-        {
-            System.out.println("empty");
-            Toast.makeText(this, "Missing username or password, please try again", Toast.LENGTH_SHORT).show();
-        }
+            Toast.makeText(this, R.string.logInFail, Toast.LENGTH_SHORT).show();
         else
         {
             System.out.println(editUsername.getText().toString());
             System.out.println(editPassword.getText().toString());
-            Toast.makeText(this, "Login successfully", Toast.LENGTH_SHORT).show();
+            Toast.makeText(this, R.string.logInSuccess, Toast.LENGTH_SHORT).show();
 
             if (editUsername.getText().toString().equals("student"))
                 startActivity(new Intent(MainActivity.this, StudentActivity.class));

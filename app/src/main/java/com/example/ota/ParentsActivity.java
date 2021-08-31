@@ -17,7 +17,7 @@ public class ParentsActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_parents);
-        getSupportActionBar().setTitle("Parents Menu");
+        getSupportActionBar().setTitle(R.string.Parents);
         getSupportActionBar().setBackgroundDrawable(new ColorDrawable(Color.parseColor("#e600ff")));
     }
     @Override
@@ -37,7 +37,7 @@ public class ParentsActivity extends AppCompatActivity {
     }
 
     public void onClickLogout(View view){
-        Toast.makeText(this, "Log out successfully", Toast.LENGTH_SHORT).show();
+        Toast.makeText(this, R.string.logOutSuccess, Toast.LENGTH_SHORT).show();
         startActivity(new Intent(ParentsActivity.this, MainActivity.class));
     }
 }

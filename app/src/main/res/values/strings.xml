@@ -2,6 +2,8 @@
     <string name="app_name">OTA</string>
     <string name="welcome">Welcome to OTA</string>
     <string name="logIn">Login</string>
+    <string name="logInSuccess">Login successfully</string>
+    <string name="logInFail">Missing username or password, please try again</string>
     <string name="Username">Username</string>
     <string name="Password">Password</string>
     <string name="forgotPassword">Forgot password?</string>
@@ -10,6 +12,7 @@
     <string name="Administrator">Administrator</string>
     <string name="Teacher">Teacher</string>
     <string name="Attendance">Attendance</string>
+    <string name="ViewAttendance">View attendance</string>
     <string name="ClassNotification">Class Notification</string>
     <string name="ClassSchedule">Class Schedule</string>
     <string name="Grade">Grade</string>
@@ -22,4 +25,5 @@
     <string name="Notification">Notification</string>
     <string name="Setting">Setting</string>
     <string name="logOut">Log Out</string>
+    <string name="logOutSuccess">Log out successfully</string>
 </resources>

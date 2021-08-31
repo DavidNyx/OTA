@@ -3,6 +3,8 @@
     <string name="app_name">OTA</string>
     <string name="welcome">Chào mừng đến với OTA</string>
     <string name="logIn">Đăng nhập</string>
+    <string name="logInSuccess">Đăng nhập thành công</string>
+    <string name="logInFail">Thiếu tên đăng nhập hoặc mật khẩu, xin hãy thử lại</string>
     <string name="Username">Tên đăng nhập</string>
     <string name="Password">Mật khẩu</string>
     <string name="forgotPassword">Quên mật khẩu?</string>
@@ -11,6 +13,7 @@
     <string name="Administrator">Giáo vụ</string>
     <string name="Teacher">Giáo viên</string>
     <string name="Attendance">Điểm danh</string>
+    <string name="ViewAttendance">Xem phiếu điểm danh</string>
     <string name="ClassNotification">Thông báo lớp</string>
     <string name="ClassSchedule">Thời khóa biểu</string>
     <string name="Grade">Điểm số</string>
@@ -22,5 +25,6 @@
     <string name="Schedule">Thời khóa biểu</string>
     <string name="Notification">Thông báo</string>
     <string name="Setting">Cài đặt</string>
-    <string name="logOut">Thoát tài khoản</string>
+    <string name="logOut">Đăng xuất</string>
+    <string name="logOutSuccess">Đăng xuất thành công</string>
 </resources>
