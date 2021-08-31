@@ -21,5 +21,6 @@
     <string name="Class">Lớp học</string>
     <string name="Schedule">Thời khóa biểu</string>
     <string name="Notification">Thông báo</string>
+    <string name="Setting">Cài đặt</string>
     <string name="logOut">Thoát tài khoản</string>
 </resources>

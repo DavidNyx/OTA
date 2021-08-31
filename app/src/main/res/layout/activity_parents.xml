@@ -10,32 +10,6 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
 
-        <View
-            android:id="@+id/view"
-            android:layout_width="wrap_content"
-            android:layout_height="100dp"
-            android:background="#0BB378"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.0"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent" />
-
-        <TextView
-            android:id="@+id/textParents"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="16dp"
-            android:layout_marginTop="10dp"
-            android:layout_marginBottom="10dp"
-            android:text="@string/Parents"
-            android:textColor="#ffffff"
-            android:textSize="30sp"
-            android:textStyle="bold"
-            app:layout_constraintBottom_toBottomOf="@+id/view"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.566" />
-
         <Button
             android:id="@+id/view_classScheduleButton"
             android:layout_width="300dp"
@@ -49,7 +23,7 @@
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.498"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/view" />
+            app:layout_constraintTop_toTopOf="parent" />
 
         <Button
             android:id="@+id/view_attendanceButton"
@@ -135,7 +109,8 @@
             android:textStyle="bold"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/view_tuitionFeeButton" />
+            app:layout_constraintTop_toBottomOf="@+id/view_tuitionFeeButton"
+            android:onClick="onClickLogout"/>
 
         <View
             android:layout_width="wrap_content"
