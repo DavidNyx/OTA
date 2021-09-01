@@ -1,48 +1,31 @@
 package com.example.ota;
 
-import androidx.annotation.NonNull;
-import androidx.appcompat.app.AppCompatActivity;
-
-import android.annotation.SuppressLint;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
-import android.widget.RemoteViews;
 import android.widget.TextView;
 import android.widget.Toast;
+
+import androidx.appcompat.app.AppCompatActivity;
 
 import com.android.volley.Request;
 import com.android.volley.Response;
 import com.android.volley.VolleyError;
-import com.android.volley.toolbox.JsonArrayRequest;
 import com.android.volley.toolbox.JsonObjectRequest;
 
 import org.json.JSONArray;
 import org.json.JSONException;
 import org.json.JSONObject;
-import org.w3c.dom.Text;
 
-import android.content.Intent;
-import android.graphics.Color;
-import android.graphics.drawable.ColorDrawable;
-import android.os.Bundle;
-import android.view.Menu;
-import android.view.MenuItem;
-import android.view.View;
-import android.widget.Toast;
-
-public class StudentActivity extends AppCompatActivity {
+public class schedule extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_student);
-        getSupportActionBar().setTitle(R.string.Student);
-        getSupportActionBar().setBackgroundDrawable(new ColorDrawable(Color.parseColor("#e600ff")));
+        setContentView(R.layout.schedule);
+        auto();
     }
 
-    /*public void onClickViewSchedule(View view) {
-
-        setContentView(R.layout.schedule);
+    public void auto() {
         JSONObject data = null;
         data = new JSONObject();
         try {
@@ -60,7 +43,7 @@ public class StudentActivity extends AppCompatActivity {
                         try {
                             Log.d("b",response.toString());
                             String message=response.getString("message");
-                            Toast.makeText(StudentActivity.this, message, Toast.LENGTH_SHORT).show();
+                            Toast.makeText(schedule.this, message, Toast.LENGTH_SHORT).show();
                             if(message.equals("Query successfully")==true) {
                                 JSONArray timetable=(JSONArray) response.get("timetable");
                                 try{
@@ -133,40 +116,12 @@ public class StudentActivity extends AppCompatActivity {
             @Override
             public void onErrorResponse(VolleyError error) {
                 String message=error.toString();
-                Toast.makeText(StudentActivity.this, message, Toast.LENGTH_SHORT).show();
+                Toast.makeText(schedule.this, message, Toast.LENGTH_SHORT).show();
                 Log.d("c",message);
                 //Toast.makeText(MainActivity.this, error.getMessage(), Toast.LENGTH_SHORT).show();
             }
         });
         VolleySingleton.getInstance(this).getRequestQueue().add(jsonObjectRequest);
 
-    }*/
-    @Override
-    public boolean onCreateOptionsMenu(Menu menu) {
-        getMenuInflater().inflate(R.menu.menu,menu);
-        return super.onCreateOptionsMenu(menu);
-    }
-    @Override
-    public boolean onOptionsItemSelected(@NonNull MenuItem item) {
-        switch(item.getItemId()){
-            case R.id.setting:
-                break;
-            case R.id.account:
-                break;
-        }
-        return super.onOptionsItemSelected(item);
-    }
-    public void onClickGradeofStudent(View view){
-        startActivity(new Intent(StudentActivity.this, grade.class));
-    }
-    public void onClickFeeStudent(View view){
-        startActivity(new Intent(StudentActivity.this, FeeActivity.class));
-    }
-    public void onClickLogout(View view){
-        Toast.makeText(this, R.string.logOutSuccess, Toast.LENGTH_SHORT).show();
-        startActivity(new Intent(StudentActivity.this, MainActivity.class));
-    }
-    public void onClickViewSchedule(View view){
-        startActivity(new Intent(StudentActivity.this, schedule.class));
     }
 }
