@@ -44,5 +44,6 @@
     <string name="grade_45_2">45phut_2</string>
     <string name="Midterm">giuaki</string>
     <string name="Final">cuoiki</string>
-
+    <string name="EditAttendance">Sửa điểm danh</string>
+    <string name="EditGrade">Sửa điểm</string>
 </resources>

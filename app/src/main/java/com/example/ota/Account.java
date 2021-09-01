@@ -3,6 +3,7 @@ package com.example.ota;
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
 
 public class Account extends AppCompatActivity {
@@ -84,6 +85,5 @@ public class Account extends AppCompatActivity {
     public void setPhone(String phone) {
         Phone = phone;
     }
-
 
 }

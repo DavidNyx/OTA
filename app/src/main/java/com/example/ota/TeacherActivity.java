@@ -44,4 +44,8 @@ public class TeacherActivity extends AppCompatActivity {
     public void onClickAttendance(View view){
         startActivity(new Intent(TeacherActivity.this, AttendanceActivity.class));
     }
+
+    public void EditAttendanceButton(View view){
+        startActivity(new Intent(TeacherActivity.this, EditAttendance.class));
+    }
 }

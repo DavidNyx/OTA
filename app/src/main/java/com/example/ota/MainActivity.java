@@ -46,8 +46,7 @@ public class MainActivity extends AppCompatActivity {
         else {
             String Username = editUsername.getText().toString();
             String Password = editPassword.getText().toString();
-            JSONObject data = null;
-            data = new JSONObject();
+            JSONObject data = new JSONObject();
             try { // day la data truyen cho server
                 data.put("ID",Username);
                 data.put("password",Password);

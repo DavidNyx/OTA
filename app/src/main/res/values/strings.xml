@@ -43,5 +43,8 @@
     <string name="grade_45_2">45phut_2</string>
     <string name="Midterm">giuaki</string>
     <string name="Final">cuoiki</string>
+    <string name="EditAttendance">Edit Attendance</string>
+    <string name="EditGrade">Edit Grade</string>
+
 
 </resources>

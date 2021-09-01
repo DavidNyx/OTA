@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
-
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-
     package="com.example.ota">
-    <uses-permission android:name="android.permission.INTERNET"></uses-permission>
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ota1_icon"
@@ -11,14 +11,14 @@
         android:roundIcon="@mipmap/ota1_icon"
         android:supportsRtl="true"
         android:theme="@style/Theme.OTA">
-        <activity android:name=".StudentActivity"></activity>
-        <activity android:name=".ParentsActivity"></activity>
-        <activity android:name=".AdministratorActivity"></activity>
-        <activity android:name=".TeacherActivity"></activity>
-        <activity android:name=".AttendanceActivity"></activity>
-        <activity android:name=".grade"></activity>
-        <activity android:name=".Email"></activity>
-
+        <activity android:name=".EditAttendance"></activity>
+        <activity android:name=".StudentActivity" />
+        <activity android:name=".ParentsActivity" />
+        <activity android:name=".AdministratorActivity" />
+        <activity android:name=".TeacherActivity" />
+        <activity android:name=".AttendanceActivity" />
+        <activity android:name=".grade" />
+        <activity android:name=".Email" />
         <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

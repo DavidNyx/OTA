@@ -1,0 +1,305 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".EditAttendance">
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <EditText
+            android:id="@+id/EA_ID"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:layout_marginEnd="120dp"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:text="Student ID"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <EditText
+            android:id="@+id/EA_Subject"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:layout_marginEnd="120dp"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:text="Subject"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/EA_ID" />
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/EA_CV_Week1"
+            android:layout_width="100dp"
+            android:layout_height="60dp"
+            android:layout_marginStart="50dp"
+            android:layout_marginTop="200dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <EditText
+                android:id="@+id/EA_Week1"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:ems="10"
+                android:inputType="textPersonName"
+                android:layout_gravity="center"
+                android:layout_marginTop="10dp"/>
+
+            <TextView
+                android:id="@+id/Week1"
+                android:layout_width="match_parent"
+                android:layout_height="20dp"
+                android:text="Week 1"
+                android:gravity="center"/>
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/EA_CV_Week2"
+            android:layout_width="100dp"
+            android:layout_height="60dp"
+            android:layout_marginTop="200dp"
+            android:layout_marginEnd="50dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+            <EditText
+                android:id="@+id/EA_Week2"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:ems="10"
+                android:inputType="textPersonName"
+                android:layout_gravity="center"
+                android:layout_marginTop="10dp"/>
+
+            <TextView
+                android:id="@+id/Week2"
+                android:layout_width="match_parent"
+                android:layout_height="20dp"
+                android:text="Week 2"
+                android:gravity="center"/>
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/EA_CV_Week3"
+            android:layout_width="100dp"
+            android:layout_height="60dp"
+            android:layout_marginStart="50dp"
+            android:layout_marginTop="30dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/EA_CV_Week1" >
+            <EditText
+                android:id="@+id/EA_Week3"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:ems="10"
+                android:inputType="textPersonName"
+                android:layout_gravity="center"
+                android:layout_marginTop="10dp"/>
+
+            <TextView
+                android:id="@+id/Week3"
+                android:layout_width="match_parent"
+                android:layout_height="20dp"
+                android:text="Week 3"
+                android:gravity="center"/>
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/EA_CV_Week4"
+            android:layout_width="100dp"
+            android:layout_height="60dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginEnd="50dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/EA_CV_Week2" >
+            <EditText
+                android:id="@+id/EA_Week4"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:ems="10"
+                android:inputType="textPersonName"
+                android:layout_gravity="center"
+                android:layout_marginTop="10dp"/>
+
+            <TextView
+                android:id="@+id/Week4"
+                android:layout_width="match_parent"
+                android:layout_height="20dp"
+                android:text="Week 4"
+                android:gravity="center"/>
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/EA_CV_Week5"
+            android:layout_width="100dp"
+            android:layout_height="60dp"
+            android:layout_marginStart="50dp"
+            android:layout_marginTop="30dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/EA_CV_Week3" >
+            <EditText
+                android:id="@+id/EA_Week5"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:ems="10"
+                android:inputType="textPersonName"
+                android:layout_gravity="center"
+                android:layout_marginTop="10dp"/>
+
+            <TextView
+                android:id="@+id/Week5"
+                android:layout_width="match_parent"
+                android:layout_height="20dp"
+                android:text="Week 5"
+                android:gravity="center"/>
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/EA_CV_Week6"
+            android:layout_width="100dp"
+            android:layout_height="60dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginEnd="50dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/EA_CV_Week4">
+            <EditText
+                android:id="@+id/EA_Week6"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:ems="10"
+                android:inputType="textPersonName"
+                android:layout_gravity="center"
+                android:layout_marginTop="10dp"/>
+
+            <TextView
+                android:id="@+id/Week6"
+                android:layout_width="match_parent"
+                android:layout_height="20dp"
+                android:text="Week 6"
+                android:gravity="center"/>
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/EA_CV_Week7"
+            android:layout_width="100dp"
+            android:layout_height="60dp"
+            android:layout_marginStart="50dp"
+            android:layout_marginTop="30dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/EA_CV_Week5">
+        <EditText
+            android:id="@+id/EA_Week7"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"/>
+
+        <TextView
+            android:id="@+id/Week7"
+            android:layout_width="match_parent"
+            android:layout_height="20dp"
+            android:text="Week 7"
+            android:gravity="center"/>
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/EA_CV_Week8"
+            android:layout_width="100dp"
+            android:layout_height="60dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginEnd="50dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/EA_CV_Week6" >
+            <EditText
+                android:id="@+id/EA_Week8"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:ems="10"
+                android:inputType="textPersonName"
+                android:layout_gravity="center"
+                android:layout_marginTop="10dp"/>
+
+            <TextView
+                android:id="@+id/Week8"
+                android:layout_width="match_parent"
+                android:layout_height="20dp"
+                android:text="Week 8"
+                android:gravity="center"/>
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/EA_CV_Week9"
+            android:layout_width="100dp"
+            android:layout_height="60dp"
+            android:layout_marginStart="50dp"
+            android:layout_marginTop="30dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/EA_CV_Week7" >
+            <EditText
+                android:id="@+id/EA_Week9"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:ems="10"
+                android:inputType="textPersonName"
+                android:layout_gravity="center"
+                android:layout_marginTop="10dp"/>
+
+            <TextView
+                android:id="@+id/Week9"
+                android:layout_width="match_parent"
+                android:layout_height="20dp"
+                android:text="Week 9"
+                android:gravity="center"/>
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/EA_CV_Week10"
+            android:layout_width="100dp"
+            android:layout_height="60dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginEnd="50dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/EA_CV_Week8" >
+        <EditText
+            android:id="@+id/EA_Week10"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"/>
+
+        <TextView
+            android:id="@+id/Week10"
+            android:layout_width="match_parent"
+            android:layout_height="20dp"
+            android:text="Week 10"
+            android:gravity="center"/>
+
+        </androidx.cardview.widget.CardView>
+
+        <Button
+            android:id="@+id/EA_Submit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="165dp"
+            android:layout_marginTop="650dp"
+            android:text="SUBMIT"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:onClick="EA_Submit">
+
+        </Button>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>
