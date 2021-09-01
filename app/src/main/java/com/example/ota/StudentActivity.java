@@ -36,7 +36,8 @@ public class StudentActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_student);
-
+        getSupportActionBar().setTitle(R.string.Student);
+        getSupportActionBar().setBackgroundDrawable(new ColorDrawable(Color.parseColor("#e600ff")));
     }
 
     public void onClickViewSchedule(View view) {
@@ -142,8 +143,6 @@ public class StudentActivity extends AppCompatActivity {
         });
         VolleySingleton.getInstance(this).getRequestQueue().add(jsonObjectRequest);
 
-        getSupportActionBar().setTitle(R.string.Student);
-        getSupportActionBar().setBackgroundDrawable(new ColorDrawable(Color.parseColor("#e600ff")));
     }
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
