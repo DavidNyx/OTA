@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".grade"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:stretchColumns="1,2,3,4,5,6,7,8,9,10">
+
+    <TableRow>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="SubId"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:padding="10dp"
+            android:layout_column="1"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="SubName"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:padding="10dp"
+            android:layout_column="1"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="15phut_1"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:padding="10dp"
+            android:layout_column="1"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="15phut_2"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:padding="10dp"
+            android:layout_column="1"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="15phut_3"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:padding="10dp"
+            android:layout_column="1"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="15phut_4"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:padding="10dp"
+            android:layout_column="1"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="45phut_1"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:padding="10dp"
+            android:layout_column="1"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="45phut_2"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:padding="10dp"
+            android:layout_column="1"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="giuaki"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:padding="10dp"
+            android:layout_column="1"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="cuoiki"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:padding="10dp"
+            android:layout_column="1"/>
+    </TableRow>
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recycler_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+</TableLayout>
