@@ -1,17 +1,17 @@
 package com.example.ota;
 
-public class Score {
-    int SubId;
-    String SubName;
-    int grade_15_1;
-    int grade_15_2;
-    int grade_15_3;
-    int grade_15_4;
-    int grade_45_1;
-    int grade_45_2;
-    int Midterm;
-    int Final;
-    public Score(int SubId,String SubName, int grade_15_1, int grade_15_2, int grade_15_3, int grade_15_4, int grade_45_1, int grade_45_2, int Midterm, int Final){
+public class score {
+    private int SubId;
+    private String SubName;
+    private int grade_15_1;
+    private int grade_15_2;
+    private int grade_15_3;
+    private int grade_15_4;
+    private int grade_45_1;
+    private int grade_45_2;
+    private int giuaki;
+    private int cuoiki;
+    public score(int SubId,String SubName, int grade_15_1, int grade_15_2, int grade_15_3, int grade_15_4, int grade_45_1, int grade_45_2, int giuaki, int cuoiki){
         this.SubId=SubId;
         this.SubName=SubName;
         this.grade_15_1=grade_15_1;
@@ -20,8 +20,8 @@ public class Score {
         this.grade_15_4=grade_15_4;
         this.grade_45_1=grade_45_1;
         this.grade_45_2=grade_45_2;
-        this.Midterm=Midterm;
-        this.Final=Final;
+        this.giuaki=giuaki;
+        this.cuoiki=cuoiki;
     }
 
     public int getSubId() {
@@ -88,19 +88,19 @@ public class Score {
         this.grade_45_2 = grade_45_2;
     }
 
-    public int getMidterm() {
-        return Midterm;
+    public int getGiuaki() {
+        return giuaki;
     }
 
-    public void setMidterm(int Midterm) {
-        this.Midterm = Midterm;
+    public void setGiuaki(int giuaki) {
+        this.giuaki = giuaki;
     }
 
-    public int getFinal() {
-        return Final;
+    public int getCuoiki() {
+        return cuoiki;
     }
 
-    public void setFinal(int Final) {
-        this.Final = Final;
+    public void setCuoiki(int cuoiki) {
+        this.cuoiki = cuoiki;
     }
 }
