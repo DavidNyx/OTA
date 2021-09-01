@@ -26,7 +26,6 @@ import java.util.HashMap;
 import java.util.Map;
 
 public class MainActivity extends AppCompatActivity {
-    private String url = "https://ota-be-server.herokuapp.com/linkserver/account/login/";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -40,6 +39,7 @@ public class MainActivity extends AppCompatActivity {
         EditText editPassword = findViewById(R.id.editPassword);
         if (editUsername.getText().toString().equals("") || editPassword.getText().toString().equals(""))
         {
+            startActivity(new Intent(MainActivity.this, ParentsActivity.class));
             System.out.println("empty");
             Toast.makeText(this, "Missing username or password, please try again", Toast.LENGTH_SHORT).show();
         }
@@ -51,6 +51,7 @@ public class MainActivity extends AppCompatActivity {
             try { // day la data truyen cho server
                 data.put("ID",Username);
                 data.put("password",Password);
+                Toast.makeText(MainActivity.this, data.toString(), Toast.LENGTH_SHORT).show();
             } catch (JSONException e) {
                 e.printStackTrace();
             }

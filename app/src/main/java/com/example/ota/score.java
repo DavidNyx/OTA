@@ -1,16 +1,16 @@
 package com.example.ota;
 
 public class score {
-    int SubId;
-    String SubName;
-    int grade_15_1;
-    int grade_15_2;
-    int grade_15_3;
-    int grade_15_4;
-    int grade_45_1;
-    int grade_45_2;
-    int giuaki;
-    int cuoiki;
+    private int SubId;
+    private String SubName;
+    private int grade_15_1;
+    private int grade_15_2;
+    private int grade_15_3;
+    private int grade_15_4;
+    private int grade_45_1;
+    private int grade_45_2;
+    private int giuaki;
+    private int cuoiki;
     public score(int SubId,String SubName, int grade_15_1, int grade_15_2, int grade_15_3, int grade_15_4, int grade_45_1, int grade_45_2, int giuaki, int cuoiki){
         this.SubId=SubId;
         this.SubName=SubName;

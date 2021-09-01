@@ -1,6 +1,8 @@
 package com.example.ota;
 
+import androidx.annotation.LongDef;
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.recyclerview.widget.ConcatAdapter;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
@@ -27,25 +29,33 @@ import java.util.List;
 public class grade extends AppCompatActivity {
     RecyclerView recycler_view;
     score_adapter adapter;
-
+    List<score> data;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_grade);
-        recycler_view = findViewById(R.id.recycler_view);
-        setRecyclerView();
-        //auto();
+        auto();
+        //Toast.makeText(grade.this, data.get(0).getSubName(), Toast.LENGTH_SHORT).show();
+
+
     }
-    private void setRecyclerView(){
+    public void init(){
+        recycler_view = findViewById(R.id.recycler_view);
         recycler_view.setHasFixedSize(true);
-        recycler_view.setLayoutManager(new LinearLayoutManager(this));
-        this.adapter = new score_adapter(this, getList());
-        recycler_view.setAdapter(this.adapter);
+        LinearLayoutManager linearLayoutManager=new LinearLayoutManager(this);
+        recycler_view.setLayoutManager(linearLayoutManager);
+
+        adapter = new score_adapter(this,data);
+        //ConcatAdapter concatAdapter=new ConcatAdapter(adapter);
+        recycler_view.setAdapter(adapter);
     }
     private List<score> getList(){
         List<score> score_list=new ArrayList<>();
         score_list.add(new score(1,"Toan",2,3,2,3,1,2,3,4));
+        score_list.add(new score(1,"Toan",2,3,2,3,1,2,3,4));
+        score_list.add(new score(1,"Toan",2,3,2,3,1,2,3,4));
+
         return score_list;
     }
     public void auto(){
@@ -85,6 +95,7 @@ public class grade extends AppCompatActivity {
             VolleySingleton.getInstance(this).getRequestQueue().add(jsonObjectRequest);
     }
     public void read_json_grade(JSONArray grade)  {
+        List<score> score_list=new ArrayList<>();
         try{
             for(int i = 0; i<grade.length(); i++){
                 JSONObject obj = grade.getJSONObject(i);
@@ -98,10 +109,13 @@ public class grade extends AppCompatActivity {
                 int grade_45_2=(int) obj.get("45phut_2");
                 int giuaki=(int) obj.get("giuaki");
                 int cuoiki=(int) obj.get("cuoiki");
+                score_list.add(new score(SubId,SubName,grade_15_1,grade_15_2,grade_15_3,grade_15_4,grade_45_1,grade_45_2,giuaki,cuoiki));
             }
         }catch (JSONException e) {
             e.printStackTrace();
         }
+        data=score_list;
+        init();
     }
 
 }
