@@ -36,27 +36,14 @@ public class grade extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_grade);
         auto();
-        //Toast.makeText(grade.this, data.get(0).getSubName(), Toast.LENGTH_SHORT).show();
-
-
     }
     public void init(){
         recycler_view = findViewById(R.id.recycler_view);
         recycler_view.setHasFixedSize(true);
         LinearLayoutManager linearLayoutManager=new LinearLayoutManager(this);
         recycler_view.setLayoutManager(linearLayoutManager);
-
         adapter = new score_adapter(this,data);
-        //ConcatAdapter concatAdapter=new ConcatAdapter(adapter);
         recycler_view.setAdapter(adapter);
-    }
-    private List<score> getList(){
-        List<score> score_list=new ArrayList<>();
-        score_list.add(new score(1,"Toan",2,3,2,3,1,2,3,4));
-        score_list.add(new score(1,"Toan",2,3,2,3,1,2,3,4));
-        score_list.add(new score(1,"Toan",2,3,2,3,1,2,3,4));
-
-        return score_list;
     }
     public void auto(){
         JSONObject data = null;
@@ -117,5 +104,4 @@ public class grade extends AppCompatActivity {
         data=score_list;
         init();
     }
-
 }
