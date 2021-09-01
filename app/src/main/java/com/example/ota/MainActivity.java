@@ -44,7 +44,6 @@ public class MainActivity extends AppCompatActivity {
             Toast.makeText(this, "Missing username or password, please try again", Toast.LENGTH_SHORT).show();
         }
         else {
-
             String Username = editUsername.getText().toString();
             String Password = editPassword.getText().toString();
             JSONObject data = null;
@@ -52,12 +51,10 @@ public class MainActivity extends AppCompatActivity {
             try { // day la data truyen cho server
                 data.put("ID",Username);
                 data.put("password",Password);
-                Toast.makeText(MainActivity.this, data.toString(), Toast.LENGTH_SHORT).show();
             } catch (JSONException e) {
                 e.printStackTrace();
             }
-            Log.d("a",data.toString());
-            final String url = "https://ota-be-server.herokuapp.com";///account/login
+            final String url = "https://ota-be-server.herokuapp.com/account/login/";
             JsonObjectRequest jsonObjectRequest = new JsonObjectRequest(Request.Method.POST, url, data,
                     new Response.Listener<JSONObject>() {
                         @Override
@@ -66,12 +63,13 @@ public class MainActivity extends AppCompatActivity {
                                     Log.d("b",response.toString());
                                     String message=response.getString("message");
                                     Toast.makeText(MainActivity.this, message, Toast.LENGTH_SHORT).show();
-                                    if(message == "Login successfully") { // moi sua
-                                        String ID = response.getString("ID");
-                                        Account.account.setID(ID);
-                                        String password = response.getString("password");
-                                        Toast.makeText(MainActivity.this, Account.account.getID(), Toast.LENGTH_SHORT).show();
-                                        startActivity(new Intent(MainActivity.this, test.class));
+                                    if(message.equals("Login successfully")==true) { // moi sua
+                                        JSONObject id_password=(JSONObject) response.get("id_password");
+                                        String id = id_password.getString("id");
+                                        Account.account.setID(id);
+                                        String Password = id_password.getString("Password");
+                                        Toast.makeText(MainActivity.this, Account.account.getID()+" "+Password, Toast.LENGTH_SHORT).show();
+                                        startActivity(new Intent(MainActivity.this, ParentsActivity.class));
                                     }
                                 }catch(JSONException e) {
                                     e.printStackTrace();
@@ -83,7 +81,7 @@ public class MainActivity extends AppCompatActivity {
                 public void onErrorResponse(VolleyError error) {
                     String message=error.toString();
                     Log.d("c",message);
-                    //Toast.makeText(MainActivity.this, error.getMessage(), Toast.LENGTH_SHORT).show();
+                    Toast.makeText(MainActivity.this, error.getMessage(), Toast.LENGTH_SHORT).show();
                 }
             });
             VolleySingleton.getInstance(this).getRequestQueue().add(jsonObjectRequest);

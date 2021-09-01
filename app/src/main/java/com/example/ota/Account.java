@@ -6,7 +6,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.os.Bundle;
 
 public class Account extends AppCompatActivity {
-    public static Account account=new Account();
+    final public static Account account=new Account();
     protected String ID;
     protected String Name;
     protected String Class;
