@@ -27,4 +27,21 @@
     <string name="Setting">Setting</string>
     <string name="logOut">Log Out</string>
     <string name="logOutSuccess">Log out successfully</string>
+    <string name="Send">Send</string>
+    <string name="Email">Email</string>
+    <string name="Subject">Subject</string>
+    <string name="Message">Message</string>
+    <string name="channelName">Chanel 1</string>
+    <string name="channelDescription">This is Chanel 1</string>
+    <string name="SubID">SubID</string>
+    <string name="SubName">SubName</string>
+    <string name="grade_15_1">15phut_1</string>
+    <string name="grade_15_2">15phut_2</string>
+    <string name="grade_15_3">15phut_3</string>
+    <string name="grade_15_4">15phut_4</string>
+    <string name="grade_45_1">45phut_1</string>
+    <string name="grade_45_2">45phut_2</string>
+    <string name="Midterm">giuaki</string>
+    <string name="Final">cuoiki</string>
+
 </resources>

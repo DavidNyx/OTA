@@ -40,4 +40,10 @@ public class ParentsActivity extends AppCompatActivity {
         Toast.makeText(this, R.string.logOutSuccess, Toast.LENGTH_SHORT).show();
         startActivity(new Intent(ParentsActivity.this, MainActivity.class));
     }
+    public void onClickGrade(View view){
+        startActivity(new Intent(ParentsActivity.this, Grade.class));
+    }
+    public void onClickAbsentLetter(View view){
+        startActivity(new Intent(ParentsActivity.this, Email.class));
+    }
 }

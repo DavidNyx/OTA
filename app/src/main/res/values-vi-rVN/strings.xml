@@ -28,4 +28,21 @@
     <string name="Setting">Cài đặt</string>
     <string name="logOut">Đăng xuất</string>
     <string name="logOutSuccess">Đăng xuất thành công</string>
+    <string name="Send">Gửi</string>
+    <string name="Email">Email</string>
+    <string name="Subject">Chủ đề</string>
+    <string name="Message">Nội dung</string>
+    <string name="channelName">Kênh 1</string>
+    <string name="channelDescription">Đây là kênh 1</string>
+    <string name="SubID">SubID</string>
+    <string name="SubName">SubName</string>
+    <string name="grade_15_1">15phut_1</string>
+    <string name="grade_15_2">15phut_2</string>
+    <string name="grade_15_3">15phut_3</string>
+    <string name="grade_15_4">15phut_4</string>
+    <string name="grade_45_1">45phut_1</string>
+    <string name="grade_45_2">45phut_2</string>
+    <string name="Midterm">giuaki</string>
+    <string name="Final">cuoiki</string>
+
 </resources>
