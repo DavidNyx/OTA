@@ -10,117 +10,116 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
 
-        <View
-            android:id="@+id/view5"
-            android:layout_width="wrap_content"
-            android:layout_height="100dp"
-            android:background="#0BB378"
+        <Button
+            android:id="@+id/classScheduleButton"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="35dp"
+            android:background="@drawable/button"
+            android:text="@string/ClassSchedule"
+            android:textColor="#ffffff"
+            android:textSize="18sp"
+            android:textStyle="bold"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintHorizontal_bias="0.498"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
 
-        <TextView
-            android:id="@+id/textView10"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="16dp"
-            android:layout_marginTop="10dp"
-            android:layout_marginBottom="10dp"
-            android:text="@string/Parents"
-            android:textColor="#ffffff"
-            android:textSize="30sp"
-            app:layout_constraintBottom_toBottomOf="@+id/view5"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.566" />
-
         <Button
-            android:id="@+id/button13"
+            android:id="@+id/attendanceButton"
             android:layout_width="300dp"
             android:layout_height="wrap_content"
             android:layout_marginTop="35dp"
-            android:background="#2196F3"
-            android:text="@string/ClassSchedule"
-            android:textColor="#ffffff"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.498"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/view5" />
-
-        <Button
-            android:id="@+id/button14"
-            android:layout_width="300dp"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="35dp"
-            android:background="#2196F3"
+            android:background="@drawable/button"
             android:text="@string/Attendance"
             android:textColor="#ffffff"
+            android:textSize="18sp"
+            android:textStyle="bold"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/button13" />
+            app:layout_constraintTop_toBottomOf="@id/classScheduleButton" />
 
         <Button
-            android:id="@+id/button15"
+            android:id="@+id/gradeButton"
             android:layout_width="300dp"
             android:layout_height="wrap_content"
             android:layout_marginTop="32dp"
-            android:background="#2196F3"
+            android:background="@drawable/button"
             android:text="@string/Grade"
             android:textColor="#ffffff"
+            android:textSize="18sp"
+            android:textStyle="bold"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.501"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/button14" />
+            app:layout_constraintTop_toBottomOf="@id/attendanceButton"
+            android:onClick="onClickGrade"/>
 
         <Button
-            android:id="@+id/button18"
+            android:id="@+id/mapButton"
             android:layout_width="300dp"
             android:layout_height="wrap_content"
             android:layout_marginTop="35dp"
-            android:background="#2196F3"
+            android:background="@drawable/button"
             android:text="@string/Map"
             android:textColor="#ffffff"
+            android:textSize="18sp"
+            android:textStyle="bold"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/button15" />
+            app:layout_constraintTop_toBottomOf="@id/gradeButton" />
 
         <Button
-            android:id="@+id/button19"
+            android:id="@+id/absentLetterButton"
             android:layout_width="300dp"
             android:layout_height="wrap_content"
             android:layout_marginTop="32dp"
-            android:background="#2196F3"
+            android:background="@drawable/button"
             android:text="@string/AbsentLetter"
             android:textColor="#ffffff"
+            android:textSize="18sp"
+            android:textStyle="bold"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.498"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/button20" />
+            app:layout_constraintTop_toBottomOf="@id/mapButton"
+            android:onClick="onClickAbsentLetter"/>
 
         <Button
-            android:id="@+id/button20"
+            android:id="@+id/tuitionFeeButton"
             android:layout_width="300dp"
             android:layout_height="wrap_content"
             android:layout_marginTop="35dp"
-            android:background="#2196F3"
+            android:background="@drawable/button"
             android:text="@string/TuitionFee"
             android:textColor="#ffffff"
+            android:textSize="18sp"
+            android:textStyle="bold"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/button18" />
+            app:layout_constraintTop_toBottomOf="@id/absentLetterButton" />
 
         <Button
-            android:id="@+id/button21"
+            android:id="@+id/logOutButton"
             android:layout_width="300dp"
             android:layout_height="wrap_content"
             android:layout_marginTop="35dp"
-            android:background="#2196F3"
+            android:background="@drawable/button"
             android:text="@string/logOut"
             android:textColor="#ffffff"
+            android:textSize="18sp"
+            android:textStyle="bold"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/button19" />
+            app:layout_constraintTop_toBottomOf="@id/tuitionFeeButton"
+            android:onClick="onClickLogout"/>
 
+        <View
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="35dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/logOutButton" />
     </androidx.constraintlayout.widget.ConstraintLayout>
 </ScrollView>

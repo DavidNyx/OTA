@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent">
     <androidx.constraintlayout.widget.ConstraintLayout
@@ -13,6 +14,7 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="35dp"
             android:background="@drawable/button"
+            android:onClick="onClickAttendance"
             android:text="@string/Attendance"
             android:textColor="#ffffff"
             android:textSize="18sp"
@@ -45,7 +47,6 @@
             android:textColor="#ffffff"
             android:textSize="18sp"
             android:textStyle="bold"
-            android:onClick="onClickViewSchedule"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.501"
             app:layout_constraintStart_toStartOf="parent"
@@ -66,36 +67,6 @@
             app:layout_constraintTop_toBottomOf="@id/classScheduleButton" />
 
         <Button
-            android:id="@+id/feeButton"
-            android:layout_width="300dp"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="32dp"
-            android:background="@drawable/button"
-            android:text="@string/TuitionFee"
-            android:textColor="#ffffff"
-            android:textSize="18sp"
-            android:textStyle="bold"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.498"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@id/gradeButton" />
-
-        <Button
-            android:id="@+id/mapButton"
-            android:layout_width="300dp"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="35dp"
-            android:background="@drawable/button"
-            android:text="@string/Map"
-            android:textColor="#ffffff"
-            android:textSize="18sp"
-            android:textStyle="bold"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@id/feeButton"
-            />
-
-        <Button
             android:id="@+id/logOutButton"
             android:layout_width="300dp"
             android:layout_height="wrap_content"
@@ -107,7 +78,7 @@
             android:textColor="#ffffff"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@id/mapButton"
+            app:layout_constraintTop_toBottomOf="@id/gradeButton"
             android:onClick="onClickLogout"/>
 
         <View
@@ -116,7 +87,7 @@
             android:layout_marginTop="35dp"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@id/logOutButton" />
+            app:layout_constraintTop_toBottomOf="@+id/logOutButton" />
     </androidx.constraintlayout.widget.ConstraintLayout>
 
 </ScrollView>

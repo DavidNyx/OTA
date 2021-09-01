@@ -8,12 +8,12 @@
         android:layout_height="wrap_content">
 
         <Button
-            android:id="@+id/attendanceButton"
+            android:id="@+id/accountButton"
             android:layout_width="300dp"
             android:layout_height="wrap_content"
             android:layout_marginTop="35dp"
             android:background="@drawable/button"
-            android:text="@string/Attendance"
+            android:text="@string/Account"
             android:textColor="#ffffff"
             android:textSize="18sp"
             android:textStyle="bold"
@@ -22,78 +22,47 @@
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
         <Button
-            android:id="@+id/classNotificationButton"
+            android:id="@+id/classButton"
             android:layout_width="300dp"
             android:layout_height="wrap_content"
             android:layout_marginTop="35dp"
             android:background="@drawable/button"
-            android:text="@string/ClassNotification"
+            android:text="@string/Class"
             android:textColor="#ffffff"
             android:textSize="18sp"
             android:textStyle="bold"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@id/attendanceButton"/>
+            app:layout_constraintTop_toBottomOf="@id/accountButton"/>
 
         <Button
-            android:id="@+id/classScheduleButton"
+            android:id="@+id/scheduleButton"
             android:layout_width="300dp"
             android:layout_height="wrap_content"
             android:layout_marginTop="32dp"
             android:background="@drawable/button"
-            android:text="@string/ClassSchedule"
+            android:text="@string/Schedule"
             android:textColor="#ffffff"
             android:textSize="18sp"
             android:textStyle="bold"
-            android:onClick="onClickViewSchedule"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.501"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@id/classNotificationButton" />
+            app:layout_constraintTop_toBottomOf="@id/classButton" />
 
         <Button
-            android:id="@+id/gradeButton"
+            android:id="@+id/notificationButton"
             android:layout_width="300dp"
             android:layout_height="wrap_content"
             android:layout_marginTop="35dp"
             android:background="@drawable/button"
-            android:text="@string/Grade"
+            android:text="@string/Notification"
             android:textColor="#ffffff"
             android:textSize="18sp"
             android:textStyle="bold"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@id/classScheduleButton" />
-
-        <Button
-            android:id="@+id/feeButton"
-            android:layout_width="300dp"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="32dp"
-            android:background="@drawable/button"
-            android:text="@string/TuitionFee"
-            android:textColor="#ffffff"
-            android:textSize="18sp"
-            android:textStyle="bold"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.498"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@id/gradeButton" />
-
-        <Button
-            android:id="@+id/mapButton"
-            android:layout_width="300dp"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="35dp"
-            android:background="@drawable/button"
-            android:text="@string/Map"
-            android:textColor="#ffffff"
-            android:textSize="18sp"
-            android:textStyle="bold"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@id/feeButton"
-            />
+            app:layout_constraintTop_toBottomOf="@id/scheduleButton" />
 
         <Button
             android:id="@+id/logOutButton"
@@ -101,13 +70,13 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="35dp"
             android:background="@drawable/button"
-            android:textSize="18sp"
-            android:textStyle="bold"
             android:text="@string/logOut"
             android:textColor="#ffffff"
+            android:textSize="18sp"
+            android:textStyle="bold"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@id/mapButton"
+            app:layout_constraintTop_toBottomOf="@id/notificationButton"
             android:onClick="onClickLogout"/>
 
         <View
