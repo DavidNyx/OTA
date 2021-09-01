@@ -89,16 +89,16 @@ public class AttendanceActivity extends AppCompatActivity {
                 JSONObject obj = attendance.getJSONObject(i);
                 int SubId=(int) obj.get("SubId");
                 String SubName=(String) obj.get(("SubName"));
-                boolean Week1=(boolean) obj.get(("Week1"));
-                boolean Week2=(boolean) obj.get(("Week2"));
-                boolean Week3=(boolean) obj.get(("Week3"));
-                boolean Week4=(boolean) obj.get(("Week4"));
-                boolean Week5=(boolean) obj.get(("Week5"));
-                boolean Week6=(boolean) obj.get(("Week6"));
-                boolean Week7=(boolean) obj.get(("Week7"));
-                boolean Week8=(boolean) obj.get(("Week8"));
-                boolean Week9=(boolean) obj.get(("Week9"));
-                boolean Week10=(boolean) obj.get(("Week10"));
+                int Week1=(int) obj.get(("Week1"));
+                int Week2=(int) obj.get(("Week2"));
+                int Week3=(int) obj.get(("Week3"));
+                int Week4=(int) obj.get(("Week4"));
+                int Week5=(int) obj.get(("Week5"));
+                int Week6=(int) obj.get(("Week6"));
+                int Week7=(int) obj.get(("Week7"));
+                int Week8=(int) obj.get(("Week8"));
+                int Week9=(int) obj.get(("Week9"));
+                int Week10=(int) obj.get(("Week10"));
                 attendance_list.add(new Attendance(SubId,SubName,Week1,Week2,Week3,Week4,Week5,Week6,Week7,Week8,Week9,Week10));
             }
         }catch (JSONException e) {

@@ -11,6 +11,7 @@
         android:roundIcon="@mipmap/ota1_icon"
         android:supportsRtl="true"
         android:theme="@style/Theme.OTA">
+        <activity android:name=".MainActivity"/>
         <activity android:name=".EditAttendance"></activity>
         <activity android:name=".StudentActivity" />
         <activity android:name=".ParentsActivity" />
@@ -19,7 +20,8 @@
         <activity android:name=".AttendanceActivity" />
         <activity android:name=".grade" />
         <activity android:name=".Email" />
-        <activity android:name=".MainActivity">
+        <activity android:name=".FeeActivity"/>
+        <activity android:name=".SplashScreen">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
