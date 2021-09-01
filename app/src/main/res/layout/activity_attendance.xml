@@ -1,68 +1,148 @@
 <?xml version="1.0" encoding="utf-8"?>
-<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
-
-    <androidx.constraintlayout.widget.ConstraintLayout
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="horizontal"
+    android:layout_alignParentBottom="true"
+    android:layout_alignParentLeft="true"
+    android:layout_alignParentRight="true"
+    android:layout_alignParentTop="true"
+    tools:context=".grade">
+    <HorizontalScrollView
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
-        <View
-            android:id="@+id/view"
+        <TableLayout android:layout_height="match_parent"
             android:layout_width="wrap_content"
-            android:layout_height="80dp"
-            android:background="#0BB378"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.0"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent" />
+            android:stretchColumns="1,2,3,4,5,6,7,8,9,10,11,12"
+            >
+            <TableRow>
+                <TextView
+                    android:id="@+id/SubId_tv"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_column="1"
+                    android:gravity="center"
+                    android:padding="15dp"
+                    android:text="SubId"
+                    android:textSize="16sp" />
 
-        <TextView
-            android:id="@+id/textAttendance"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="16dp"
-            android:layout_marginTop="10dp"
-            android:layout_marginBottom="10dp"
-            android:text="@string/Attendance"
-            android:textColor="#ffffff"
-            android:textSize="30sp"
-            android:textStyle="bold"
-            app:layout_constraintBottom_toBottomOf="@+id/view"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.566" />
+                <TextView
+                    android:id="@+id/SubName_tv"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_column="1"
+                    android:gravity="center"
+                    android:padding="15dp"
+                    android:text="SubName"
+                    android:textSize="16sp" />
 
-        <Button
-            android:id="@+id/view_attendanceButtonButton"
-            android:layout_width="300dp"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="35dp"
-            android:background="@drawable/button"
-            android:text="@string/ViewAttendance"
-            android:textColor="#ffffff"
-            android:textSize="18sp"
-            android:textStyle="bold"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.498"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@id/view" />
+                <TextView
+                    android:id="@+id/Week_1_tv"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_column="1"
+                    android:gravity="center"
+                    android:padding="15dp"
+                    android:text="Week 1"
+                    android:textSize="16sp" />
 
-        <Button
-            android:id="@+id/check_attendanceButtonButton"
-            android:layout_width="300dp"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="35dp"
-            android:background="@drawable/button"
-            android:text="@string/ViewAttendance"
-            android:textColor="#ffffff"
-            android:textSize="18sp"
-            android:textStyle="bold"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.498"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@id/view_attendanceButtonButton" />
+                <TextView
+                    android:id="@+id/Week_2_tv"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_column="1"
+                    android:gravity="center"
+                    android:padding="15dp"
+                    android:text="Week 2"
+                    android:textSize="16sp" />
 
-    </androidx.constraintlayout.widget.ConstraintLayout>
+                <TextView
+                    android:id="@+id/Week_3_tv"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_column="1"
+                    android:gravity="center"
+                    android:padding="15dp"
+                    android:text="Week 3"
+                    android:textSize="16sp" />
 
-</ScrollView>
+                <TextView
+                    android:id="@+id/Week_4_tv"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_column="1"
+                    android:gravity="center"
+                    android:padding="15dp"
+                    android:text="Week 4"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/Week_5_tv"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_column="1"
+                    android:gravity="center"
+                    android:padding="15dp"
+                    android:text="Week 5"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/Week_6_tv"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_column="1"
+                    android:gravity="center"
+                    android:padding="15dp"
+                    android:text="Week 6"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/Week_7_tv"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_column="1"
+                    android:gravity="center"
+                    android:padding="15dp"
+                    android:text="Week 7"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/Week_8_tv"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_column="1"
+                    android:gravity="center"
+                    android:padding="15dp"
+                    android:text="Week 8"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/Week_9_tv"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_column="1"
+                    android:gravity="center"
+                    android:padding="15dp"
+                    android:text="Week 9"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/Week_10_tv"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_column="1"
+                    android:gravity="center"
+                    android:padding="15dp"
+                    android:text="Week 10"
+                    android:textSize="16sp" />
+            </TableRow>
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/recycler_view"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"/>
+        </TableLayout>
+    </HorizontalScrollView>
+
+</LinearLayout>

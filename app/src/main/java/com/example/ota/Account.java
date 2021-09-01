@@ -85,5 +85,27 @@ public class Account extends AppCompatActivity {
         Phone = phone;
     }
 
+    public String getHeader(){
+        if(this.ID.substring(0,2).equals("SD"))
+            return "stuID";
+        if(this.ID.substring(0,2).equals("PR"))
+            return "paID";
+        if(this.ID.substring(0,2).equals("TC"))
+            return "tcID";
+        if(this.ID.substring(0,2).equals("AD"))
+            return "adID";
+        return null;
+    }
 
+    public String getURL() {
+        if (this.ID.substring(0, 2).equals("SD"))
+            return "https://ota-be-server.herokuapp.com/students/";
+        if (this.ID.substring(0, 2).equals("PR"))
+            return "https://ota-be-server.herokuapp.com/parents/";
+        if (this.ID.substring(0, 2).equals("TC"))
+            return "https://ota-be-server.herokuapp.com/teacher/";
+        if (this.ID.substring(0, 2).equals("AD"))
+            return "https://ota-be-server.herokuapp.com/admin/";
+        return null;
+    }
 }

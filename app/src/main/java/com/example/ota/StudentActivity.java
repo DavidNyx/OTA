@@ -164,6 +164,9 @@ public class StudentActivity extends AppCompatActivity {
     public void onClickFeeStudent(View view){
         startActivity(new Intent(StudentActivity.this, FeeActivity.class));
     }
+    public void onClickAttendance(View view){
+        startActivity(new Intent(StudentActivity.this, AttendanceActivity.class));
+    }
     public void onClickLogout(View view){
         Toast.makeText(this, R.string.logOutSuccess, Toast.LENGTH_SHORT).show();
         startActivity(new Intent(StudentActivity.this, MainActivity.class));
