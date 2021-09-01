@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:stretchColumns="1,2,3,4,5,6,7,8,9,10"
+    tools:context=".score_adapter">
+    <TableRow>
+        <TextView
+            android:id="@+id/SubId_tv"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:textSize="24sp"
+            android:padding="10dp"
+            android:layout_column="1"
+            />
+
+        <TextView
+            android:id="@+id/SubName_tv"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:textSize="24sp"
+            android:padding="10dp"
+            android:layout_column="1"/>
+
+        <TextView
+            android:id="@+id/phut_15_1_tv"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:textSize="24sp"
+            android:padding="10dp"
+            android:layout_column="1"/>
+
+        <TextView
+            android:id="@+id/phut_15_2_tv"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:textSize="24sp"
+            android:padding="10dp"
+            android:layout_column="1"/>
+
+        <TextView
+            android:id="@+id/phut_15_3_tv"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:textSize="24sp"
+            android:padding="10dp"
+            android:layout_column="1"/>
+
+        <TextView
+            android:id="@+id/phut_15_4_tv"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:textSize="24sp"
+            android:padding="10dp"
+            android:layout_column="1"/>
+
+        <TextView
+            android:id="@+id/phut_45_1_tv"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:textSize="24sp"
+            android:padding="10dp"
+            android:layout_column="1"/>
+
+        <TextView
+            android:id="@+id/phut_45_2_tv"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:textSize="24sp"
+            android:padding="10dp"
+            android:layout_column="1"/>
+
+        <TextView
+            android:id="@+id/giuaki_tv"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:textSize="24sp"
+            android:padding="10dp"
+            android:layout_column="1"/>
+
+        <TextView
+            android:id="@+id/cuoiki_tv"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:textSize="24sp"
+            android:padding="10dp"
+            android:layout_column="1"/>
+    </TableRow>
+</TableLayout>
