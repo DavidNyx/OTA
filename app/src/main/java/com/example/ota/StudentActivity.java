@@ -45,14 +45,14 @@ public class StudentActivity extends AppCompatActivity {
         setContentView(R.layout.schedule);
         JSONObject data = null;
         data = new JSONObject();
-        try { // day la data truyen cho server
-            data.put("stuID", "SD127203");
+        try {
+            data.put("stuID", Account.account.getID());
             //Toast.makeText(StudentActivity.this, data.toString(), Toast.LENGTH_SHORT).show();
         } catch (JSONException e) {
             e.printStackTrace();
         }
-        Log.d("a",data.toString()); // https://khoapham.vn/KhoaPhamTraining/json/tien/demo4.json
-        final String url = "https://ota-be-server.herokuapp.com/students/timetable/";///account/login
+        Log.d("a",data.toString());
+        final String url = "https://ota-be-server.herokuapp.com/students/timetable/";
         JsonObjectRequest jsonObjectRequest = new JsonObjectRequest(Request.Method.POST, url, data,
                 new Response.Listener<JSONObject>() {
                     @Override
@@ -63,7 +63,6 @@ public class StudentActivity extends AppCompatActivity {
                             Toast.makeText(StudentActivity.this, message, Toast.LENGTH_SHORT).show();
                             if(message.equals("Query successfully")==true) {
                                 JSONArray timetable=(JSONArray) response.get("timetable");
-                                //read_json_timetable(timetable, null);
                                 try{
                                     //final TextView[] tv = new TextView[timetable.length()];
                                     //String time[] = new String[timetable.length()];
@@ -121,7 +120,7 @@ public class StudentActivity extends AppCompatActivity {
                                             tv = findViewById(resID);
                                             tv.setText(subName);
                                         }
-                                        Toast.makeText(StudentActivity.this, subName, Toast.LENGTH_SHORT).show();
+                                        //Toast.makeText(StudentActivity.this, subName, Toast.LENGTH_SHORT).show();
                                     }
 
                                 }catch (JSONException e) {
@@ -161,6 +160,9 @@ public class StudentActivity extends AppCompatActivity {
     }
     public void onClickGradeofStudent(View view){
         startActivity(new Intent(StudentActivity.this, grade.class));
+    }
+    public void onClickFeeStudent(View view){
+        startActivity(new Intent(StudentActivity.this, FeeActivity.class));
     }
     public void onClickLogout(View view){
         Toast.makeText(this, R.string.logOutSuccess, Toast.LENGTH_SHORT).show();

@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="horizontal"
+    android:layout_alignParentBottom="true"
+    android:layout_alignParentLeft="true"
+    android:layout_alignParentRight="true"
+    android:layout_alignParentTop="true"
+    tools:context=".FeeActivity">
+    <HorizontalScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TableLayout android:layout_height="match_parent"
+            android:layout_width="wrap_content"
+            android:stretchColumns="*">
+            <TableRow>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="Fee Notification"
+                    android:textColor="#0d6599"
+                    android:textSize="35sp"
+                    android:textStyle="bold"
+                    android:padding="15dp"
+                    android:gravity="center"
+                    android:layout_weight="1"
+                    android:layout_marginBottom="3dp"/>
+            </TableRow>
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/recycler_view_fee"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"/>
+        </TableLayout>
+    </HorizontalScrollView>
+
+</LinearLayout>
