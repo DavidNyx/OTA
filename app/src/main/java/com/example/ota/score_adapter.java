@@ -65,5 +65,4 @@ public class score_adapter extends RecyclerView.Adapter<score_adapter.ViewHolder
             cuoiki_tv=itemView.findViewById(R.id.cuoiki_tv);
         }
     }
-
 }
