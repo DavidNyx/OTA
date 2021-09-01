@@ -12,12 +12,12 @@ import android.view.MenuItem;
 import android.view.View;
 import android.widget.Toast;
 
-public class ParentsActivity extends AppCompatActivity {
+public class TeacherActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_parents);
-        getSupportActionBar().setTitle(R.string.Parents);
+        setContentView(R.layout.activity_teacher);
+        getSupportActionBar().setTitle(R.string.Teacher);
         getSupportActionBar().setBackgroundDrawable(new ColorDrawable(Color.parseColor("#e600ff")));
     }
     @Override
@@ -38,12 +38,10 @@ public class ParentsActivity extends AppCompatActivity {
 
     public void onClickLogout(View view){
         Toast.makeText(this, R.string.logOutSuccess, Toast.LENGTH_SHORT).show();
-        startActivity(new Intent(ParentsActivity.this, MainActivity.class));
+        startActivity(new Intent(TeacherActivity.this, MainActivity.class));
     }
-    public void onClickGrade(View view){
-        startActivity(new Intent(ParentsActivity.this, Grade.class));
-    }
-    public void onClickAbsentLetter(View view){
-        startActivity(new Intent(ParentsActivity.this, Email.class));
+
+    public void onClickAttendance(View view){
+        startActivity(new Intent(TeacherActivity.this, AttendanceActivity.class));
     }
 }

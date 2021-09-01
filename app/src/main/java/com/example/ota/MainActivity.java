@@ -60,22 +60,29 @@ public class MainActivity extends AppCompatActivity {
                     new Response.Listener<JSONObject>() {
                         @Override
                         public void onResponse(JSONObject response) {
-                                try {
-                                    Log.d("b",response.toString());
-                                    String message=response.getString("message");
-                                    Toast.makeText(MainActivity.this, message, Toast.LENGTH_SHORT).show();
-                                    if(message.equals("Login successfully")==true) { // moi sua
-                                        JSONObject id_password=(JSONObject) response.get("id_password");
-                                        String id = id_password.getString("id");
-                                        Account.account.setID(id);
-                                        String Password = id_password.getString("Password");
-                                        Toast.makeText(MainActivity.this, Account.account.getID()+" "+Password, Toast.LENGTH_SHORT).show();
+                            try {
+                                Log.d("b",response.toString());
+                                String message=response.getString("message");
+                                Toast.makeText(MainActivity.this, message, Toast.LENGTH_SHORT).show();
+                                if(message.equals("Login successfully")) { // moi sua
+                                    JSONObject id_password=(JSONObject) response.get("id_password");
+                                    String id = id_password.getString("id");
+                                    Account.account.setID(id);
+                                    String Password = id_password.getString("Password");
+                                    Toast.makeText(MainActivity.this, Account.account.getID()+" "+Password, Toast.LENGTH_SHORT).show();
+                                    if(Username.substring(0,2).equals("SD"))
+                                        startActivity(new Intent(MainActivity.this, StudentActivity.class));
+                                    if(Username.substring(0,2).equals("PR"))
                                         startActivity(new Intent(MainActivity.this, ParentsActivity.class));
-                                    }
-                                }catch(JSONException e) {
-                                    e.printStackTrace();
+                                    if(Username.substring(0,2).equals("TC"))
+                                        startActivity(new Intent(MainActivity.this, TeacherActivity.class));
+                                    if(Username.substring(0,2).equals("AD"))
+                                        startActivity(new Intent(MainActivity.this, AdministratorActivity.class));
                                 }
+                            }catch(JSONException e) {
+                                e.printStackTrace();
                             }
+                        }
                         //}
                     }, new Response.ErrorListener() {
                 @Override

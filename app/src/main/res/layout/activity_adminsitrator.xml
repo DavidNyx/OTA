@@ -1,22 +1,19 @@
 <?xml version="1.0" encoding="utf-8"?>
 <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    tools:context=".ParentsActivity">
-
+    android:layout_height="match_parent">
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
 
         <Button
-            android:id="@+id/classScheduleButton"
+            android:id="@+id/accountButton"
             android:layout_width="300dp"
             android:layout_height="wrap_content"
             android:layout_marginTop="35dp"
             android:background="@drawable/button"
-            android:text="@string/ClassSchedule"
+            android:text="@string/Account"
             android:textColor="#ffffff"
             android:textSize="18sp"
             android:textStyle="bold"
@@ -24,80 +21,48 @@
             app:layout_constraintHorizontal_bias="0.498"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
-
         <Button
-            android:id="@+id/attendanceButton"
+            android:id="@+id/classButton"
             android:layout_width="300dp"
             android:layout_height="wrap_content"
             android:layout_marginTop="35dp"
             android:background="@drawable/button"
-            android:text="@string/Attendance"
+            android:text="@string/Class"
             android:textColor="#ffffff"
             android:textSize="18sp"
             android:textStyle="bold"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@id/classScheduleButton" />
+            app:layout_constraintTop_toBottomOf="@id/accountButton"/>
 
         <Button
-            android:id="@+id/gradeButton"
+            android:id="@+id/scheduleButton"
             android:layout_width="300dp"
             android:layout_height="wrap_content"
             android:layout_marginTop="32dp"
             android:background="@drawable/button"
-            android:text="@string/Grade"
+            android:text="@string/Schedule"
             android:textColor="#ffffff"
             android:textSize="18sp"
             android:textStyle="bold"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.501"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@id/attendanceButton"
-            android:onClick="onClickGrade"/>
+            app:layout_constraintTop_toBottomOf="@id/classButton" />
 
         <Button
-            android:id="@+id/mapButton"
+            android:id="@+id/notificationButton"
             android:layout_width="300dp"
             android:layout_height="wrap_content"
             android:layout_marginTop="35dp"
             android:background="@drawable/button"
-            android:text="@string/Map"
+            android:text="@string/Notification"
             android:textColor="#ffffff"
             android:textSize="18sp"
             android:textStyle="bold"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@id/gradeButton" />
-
-        <Button
-            android:id="@+id/absentLetterButton"
-            android:layout_width="300dp"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="32dp"
-            android:background="@drawable/button"
-            android:text="@string/AbsentLetter"
-            android:textColor="#ffffff"
-            android:textSize="18sp"
-            android:textStyle="bold"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.498"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@id/mapButton"
-            android:onClick="onClickAbsentLetter"/>
-
-        <Button
-            android:id="@+id/tuitionFeeButton"
-            android:layout_width="300dp"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="35dp"
-            android:background="@drawable/button"
-            android:text="@string/TuitionFee"
-            android:textColor="#ffffff"
-            android:textSize="18sp"
-            android:textStyle="bold"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@id/absentLetterButton" />
+            app:layout_constraintTop_toBottomOf="@id/scheduleButton" />
 
         <Button
             android:id="@+id/logOutButton"
@@ -111,7 +76,7 @@
             android:textStyle="bold"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@id/tuitionFeeButton"
+            app:layout_constraintTop_toBottomOf="@id/notificationButton"
             android:onClick="onClickLogout"/>
 
         <View
@@ -122,4 +87,5 @@
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@id/logOutButton" />
     </androidx.constraintlayout.widget.ConstraintLayout>
+
 </ScrollView>

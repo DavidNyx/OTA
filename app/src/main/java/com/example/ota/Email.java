@@ -1,22 +1,12 @@
 package com.example.ota;
 
-import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.core.app.NotificationCompat;
-
 import android.app.Notification;
 import android.app.NotificationManager;
-import android.content.Intent;
-import android.graphics.Color;
-import android.graphics.drawable.ColorDrawable;
 import android.os.Bundle;
-import android.view.Menu;
-import android.view.MenuInflater;
-import android.view.MenuItem;
 import android.view.View;
-import android.widget.Button;
 import android.widget.EditText;
-
 import java.util.Date;
 
 public class Email extends AppCompatActivity {
@@ -35,7 +25,7 @@ public class Email extends AppCompatActivity {
         sendEmail(editEmail.getText().toString(),editSubject.getText().toString(),editMessage.getText().toString());
     }
     private void sendEmail(String Email,String Subject,String Message){
-        Notification notification=new NotificationCompat.Builder(this,Chanel.CHANNEL_ID)
+        Notification notification=new NotificationCompat.Builder(this,Channel.CHANNEL_ID)
                 .setContentTitle(Subject)
                 .setContentText(Message)
                 .setSmallIcon(R.mipmap.ota_icon)
