@@ -104,7 +104,7 @@ public class Account extends AppCompatActivity {
         if (this.ID.substring(0, 2).equals("PR"))
             return "https://ota-be-server.herokuapp.com/parents/";
         if (this.ID.substring(0, 2).equals("TC"))
-            return "https://ota-be-server.herokuapp.com/teacher/";
+            return "https://ota-be-server.herokuapp.com/teachers/";
         if (this.ID.substring(0, 2).equals("AD"))
             return "https://ota-be-server.herokuapp.com/admin/";
         return null;

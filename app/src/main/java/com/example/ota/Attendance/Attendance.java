@@ -1,4 +1,4 @@
-package com.example.ota;
+package com.example.ota.Attendance;
 
 public class Attendance {
     private int SubID;

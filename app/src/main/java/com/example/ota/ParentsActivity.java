@@ -12,6 +12,7 @@ import android.view.MenuItem;
 import android.view.View;
 import android.widget.Toast;
 
+import com.example.ota.Attendance.AttendanceActivity;
 import com.example.ota.Grade.grade;
 
 public class ParentsActivity extends AppCompatActivity {

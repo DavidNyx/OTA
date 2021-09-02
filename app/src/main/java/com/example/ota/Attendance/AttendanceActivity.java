@@ -1,23 +1,20 @@
-package com.example.ota;
+package com.example.ota.Attendance;
 
-import androidx.annotation.LongDef;
 import androidx.appcompat.app.AppCompatActivity;
-import androidx.recyclerview.widget.ConcatAdapter;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
-import java.lang.System;
-import android.content.Intent;
+
 import android.os.Bundle;
 import android.util.Log;
-import android.view.View;
-import android.widget.EditText;
 import android.widget.Toast;
 
 import com.android.volley.Request;
 import com.android.volley.Response;
 import com.android.volley.VolleyError;
-import com.android.volley.toolbox.JsonArrayRequest;
 import com.android.volley.toolbox.JsonObjectRequest;
+import com.example.ota.Account;
+import com.example.ota.R;
+import com.example.ota.VolleySingleton;
 
 import org.json.JSONArray;
 import org.json.JSONException;
@@ -25,8 +22,6 @@ import org.json.JSONObject;
 
 import java.util.ArrayList;
 import java.util.List;
-
-import static java.lang.System.*;
 
 public class AttendanceActivity extends AppCompatActivity {
     RecyclerView recycler_view;

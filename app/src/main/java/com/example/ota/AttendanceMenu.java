@@ -11,6 +11,8 @@ import android.view.View;
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
+import com.example.ota.Attendance.AttendanceActivity;
+
 
 public class AttendanceMenu extends AppCompatActivity {
     @Override
