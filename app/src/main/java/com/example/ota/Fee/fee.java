@@ -1,9 +1,11 @@
 package com.example.ota.Fee;
 
 public class fee {
+    private String title;
     private String content;
-    public fee(String content){
+    public fee(String content, String title){
         this.content=content;
+        this.title=title;
     }
 
     public String getContent() {
@@ -11,6 +13,13 @@ public class fee {
     }
 
     public void setContent(String Content) {
-        content = Content;
+        this.content = Content;
+    }
+    public String getTitle() {
+        return title;
+    }
+
+    public void setTitle(String title) {
+        this.title = title;
     }
 }

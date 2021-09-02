@@ -9,7 +9,7 @@
     android:layout_alignParentLeft="true"
     android:layout_alignParentRight="true"
     android:layout_alignParentTop="true"
-    tools:context=".Fee.FeeActivity">
+    tools:context=".Fee.NotificationActivity">
     <ScrollView
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
@@ -20,7 +20,7 @@
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
-                    android:text="Fee Notification"
+                    android:text="Class Notification"
                     android:textColor="#0d6599"
                     android:textSize="35sp"
                     android:textStyle="bold"
@@ -30,7 +30,7 @@
             </TableRow>
 
             <androidx.recyclerview.widget.RecyclerView
-                android:id="@+id/recycler_view_fee"
+                android:id="@+id/recycler_view_notice"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"/>
         </TableLayout>

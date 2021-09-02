@@ -36,7 +36,8 @@
             android:textStyle="bold"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@id/attendanceButton"/>
+            app:layout_constraintTop_toBottomOf="@id/attendanceButton"
+            android:onClick="onClickNotification"/>
 
         <Button
             android:id="@+id/classScheduleButton"

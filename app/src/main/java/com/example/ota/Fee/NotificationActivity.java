@@ -23,7 +23,7 @@ import org.json.JSONObject;
 import java.util.ArrayList;
 import java.util.List;
 
-public class FeeActivity extends AppCompatActivity {
+public class NotificationActivity extends AppCompatActivity {
     RecyclerView recycler_view;
     fee_adapter adapter;
     List<fee> data;
@@ -31,11 +31,11 @@ public class FeeActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_fee);
+        setContentView(R.layout.activity_notification);
         auto();
     }
     public void init(){
-        recycler_view = findViewById(R.id.recycler_view_fee);
+        recycler_view = findViewById(R.id.recycler_view_notice);
         recycler_view.setHasFixedSize(true);
         LinearLayoutManager linearLayoutManager=new LinearLayoutManager(this);
         recycler_view.setLayoutManager(linearLayoutManager);
@@ -49,7 +49,13 @@ public class FeeActivity extends AppCompatActivity {
         } catch (JSONException e) {
             e.printStackTrace();
         }
-        final String url = Account.account.getURL() + "tuition-fee/";
+        String url = Account.account.getURL();
+        if (Account.account.getHeader().equals("stuID")){
+            url += "class-notification/";
+        }
+        if (Account.account.getHeader().equals("tcID")){
+            url += "notification/";
+        }
         JsonObjectRequest jsonObjectRequest = new JsonObjectRequest(Request.Method.POST, url, data,
                 new Response.Listener<JSONObject>() {
                     @Override
@@ -57,9 +63,9 @@ public class FeeActivity extends AppCompatActivity {
                         try {
                             Log.d("b",response.toString());
                             String message=response.getString("message");
-                            Toast.makeText(FeeActivity.this, message, Toast.LENGTH_SHORT).show();
+                            Toast.makeText(NotificationActivity.this, message, Toast.LENGTH_SHORT).show();
                             if(message.equals("Query successfully")==true) { // moi sua
-                                JSONArray fee=(JSONArray) response.get("fee");
+                                JSONArray fee=(JSONArray) response.get("notification");
                                 read_json_fee(fee);
                             }
                         }catch(JSONException e) {
@@ -72,7 +78,7 @@ public class FeeActivity extends AppCompatActivity {
             public void onErrorResponse(VolleyError error) {
                 String message=error.toString();
                 Log.d("c",message);
-                Toast.makeText(FeeActivity.this, error.getMessage(), Toast.LENGTH_SHORT).show();
+                Toast.makeText(NotificationActivity.this, error.getMessage(), Toast.LENGTH_SHORT).show();
             }
         });
         VolleySingleton.getInstance(this).getRequestQueue().add(jsonObjectRequest);
@@ -83,7 +89,8 @@ public class FeeActivity extends AppCompatActivity {
             for(int i = 0; i<fee.length(); i++){
                 JSONObject obj = fee.getJSONObject(i);
                 String content=(String) obj.get("Content");
-                fee_list.add(new fee(content, ""));
+                String topic=(String) obj.get("Topic");
+                fee_list.add(new fee(content, topic));
             }
         }catch (JSONException e) {
             e.printStackTrace();

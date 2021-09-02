@@ -12,6 +12,7 @@ import android.view.MenuItem;
 import android.view.View;
 import android.widget.Toast;
 
+import com.example.ota.Fee.NotificationActivity;
 import com.example.ota.ViewGrade.ViewGrade;
 
 public class TeacherActivity extends AppCompatActivity {
@@ -51,6 +52,8 @@ public class TeacherActivity extends AppCompatActivity {
     }
     public void EditGradeButton(View view){
         startActivity(new Intent(TeacherActivity.this, EditGrade.class));
-
+    }
+    public void onClickNotification(View view){
+        startActivity(new Intent(TeacherActivity.this, NotificationActivity.class));
     }
 }

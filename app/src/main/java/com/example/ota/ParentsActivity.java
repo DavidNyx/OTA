@@ -7,13 +7,24 @@ import android.content.Intent;
 import android.graphics.Color;
 import android.graphics.drawable.ColorDrawable;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
+import android.widget.TextView;
 import android.widget.Toast;
 
+import com.android.volley.Request;
+import com.android.volley.Response;
+import com.android.volley.VolleyError;
+import com.android.volley.toolbox.JsonObjectRequest;
 import com.example.ota.Attendance.AttendanceActivity;
+import com.example.ota.Fee.FeeActivity;
 import com.example.ota.Grade.grade;
+
+import org.json.JSONArray;
+import org.json.JSONException;
+import org.json.JSONObject;
 
 public class ParentsActivity extends AppCompatActivity {
     @Override
@@ -54,4 +65,8 @@ public class ParentsActivity extends AppCompatActivity {
     public void onClickViewSchedule(View view){
         startActivity(new Intent(ParentsActivity.this, schedule.class));
     }
+    public void onClickFeeStudent(View view){
+        startActivity(new Intent(ParentsActivity.this, FeeActivity.class));
+    }
+
 }

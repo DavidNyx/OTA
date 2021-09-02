@@ -24,7 +24,9 @@
         <activity android:name=".Attendance.AttendanceActivity" />
         <activity android:name=".Grade.grade" />
         <activity android:name=".Email" />
+        <activity android:name=".schedule"/>
         <activity android:name=".Fee.FeeActivity" />
+        <activity android:name=".Fee.NotificationActivity"/>
         <activity android:name=".SplashScreen">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -32,7 +34,6 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".schedule" />
     </application>
 
 </manifest>
