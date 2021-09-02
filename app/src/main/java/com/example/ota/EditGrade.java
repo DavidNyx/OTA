@@ -75,8 +75,8 @@ public class EditGrade extends AppCompatActivity {
         });
         VolleySingleton.getInstance(this).getRequestQueue().add(jsonObjectRequest);
     }
-    public int check(EditText text){
-        int temp= Integer.parseInt(text.getText().toString());
+    public double check(EditText text){
+        double temp= Double.valueOf(text.getText().toString());
         if(temp>=0&&temp<=10)
             return temp;
         else

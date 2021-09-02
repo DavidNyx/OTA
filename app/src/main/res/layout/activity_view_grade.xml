@@ -10,41 +10,29 @@
     android:layout_alignParentLeft="true"
     android:layout_alignParentRight="true"
     android:layout_alignParentTop="true"
-    tools:context=".ViewGrade">
+    tools:context=".ViewGrade.ViewGrade">
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent">
-
-        <EditText
-            android:id="@+id/VG_StudentID"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="30dp"
-            android:layout_marginTop="20dp"
-            android:ems="10"
-            android:hint="Student ID"
-            android:inputType="textPersonName"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent" />
 
         <EditText
             android:id="@+id/VG_SubjectName"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="30dp"
-            android:layout_marginTop="20dp"
+            android:layout_marginTop="50dp"
             android:ems="10"
             android:hint="Subject Name"
             android:inputType="textPersonName"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/VG_StudentID" />
+            app:layout_constraintTop_toTopOf="parent" />
 
         <EditText
             android:id="@+id/VG_Class"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="30dp"
-            android:layout_marginTop="20dp"
+            android:layout_marginTop="30dp"
             android:ems="10"
             android:hint="Class"
             android:inputType="textPersonName"
@@ -78,13 +66,14 @@
 
                 <TableRow>
 
+
                     <TextView
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
                         android:layout_column="1"
                         android:gravity="center"
                         android:padding="15dp"
-                        android:text="SubId"
+                        android:text="Student Name"
                         android:textSize="16sp" />
 
                     <TextView
@@ -93,7 +82,7 @@
                         android:layout_column="1"
                         android:gravity="center"
                         android:padding="15dp"
-                        android:text="SubName"
+                        android:text="15min_1"
                         android:textSize="16sp" />
 
                     <TextView
@@ -102,7 +91,7 @@
                         android:layout_column="1"
                         android:gravity="center"
                         android:padding="15dp"
-                        android:text="15phut_1"
+                        android:text="15min_2"
                         android:textSize="16sp" />
 
                     <TextView
@@ -111,7 +100,7 @@
                         android:layout_column="1"
                         android:gravity="center"
                         android:padding="15dp"
-                        android:text="15phut_2"
+                        android:text="15min_3"
                         android:textSize="16sp" />
 
                     <TextView
@@ -120,7 +109,7 @@
                         android:layout_column="1"
                         android:gravity="center"
                         android:padding="15dp"
-                        android:text="15phut_3"
+                        android:text="15min_4"
                         android:textSize="16sp" />
 
                     <TextView
@@ -129,7 +118,7 @@
                         android:layout_column="1"
                         android:gravity="center"
                         android:padding="15dp"
-                        android:text="15phut_4"
+                        android:text="45min_1"
                         android:textSize="16sp" />
 
                     <TextView
@@ -138,7 +127,7 @@
                         android:layout_column="1"
                         android:gravity="center"
                         android:padding="15dp"
-                        android:text="45phut_1"
+                        android:text="45min_2"
                         android:textSize="16sp" />
 
                     <TextView
@@ -147,7 +136,7 @@
                         android:layout_column="1"
                         android:gravity="center"
                         android:padding="15dp"
-                        android:text="45phut_2"
+                        android:text="midterm"
                         android:textSize="16sp" />
 
                     <TextView
@@ -156,16 +145,7 @@
                         android:layout_column="1"
                         android:gravity="center"
                         android:padding="15dp"
-                        android:text="giuaki"
-                        android:textSize="16sp" />
-
-                    <TextView
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:layout_column="1"
-                        android:gravity="center"
-                        android:padding="15dp"
-                        android:text="cuoiki"
+                        android:text="final"
                         android:textSize="16sp" />
                 </TableRow>
 

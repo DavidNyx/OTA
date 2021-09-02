@@ -1,43 +1,33 @@
-package com.example.ota.Grade;
+package com.example.ota.ViewGrade;
 
-public class score {
-    private int SubId;
-    private String SubName;
+public class GradeModel {
+    private String StudentName;
     private double grade_15_1;
     private double grade_15_2;
     private double grade_15_3;
     private double grade_15_4;
     private double grade_45_1;
     private double grade_45_2;
-    private double giuaki;
-    private double cuoiki;
-    public score(int SubId,String SubName, double grade_15_1, double grade_15_2, double grade_15_3, double grade_15_4, double grade_45_1, double grade_45_2, double giuaki, double cuoiki){
-        this.SubId=SubId;
-        this.SubName=SubName;
+    private double Midterm;
+    private double Final;
+    public GradeModel(String StudentName, double grade_15_1, double grade_15_2, double grade_15_3, double grade_15_4, double grade_45_1, double grade_45_2, double Midterm, double Final){
+        this.StudentName=StudentName;
         this.grade_15_1=grade_15_1;
         this.grade_15_2=grade_15_2;
         this.grade_15_3=grade_15_3;
         this.grade_15_4=grade_15_4;
         this.grade_45_1=grade_45_1;
         this.grade_45_2=grade_45_2;
-        this.giuaki=giuaki;
-        this.cuoiki=cuoiki;
+        this.Midterm=Midterm;
+        this.Final=Final;
     }
 
-    public int getSubId() {
-        return SubId;
+    public String getStudentName() {
+        return StudentName;
     }
 
-    public void setSubId(int subId) {
-        SubId = subId;
-    }
-
-    public String getSubName() {
-        return SubName;
-    }
-
-    public void setSubName(String subName) {
-        SubName = subName;
+    public void setStudentName(String studentName) {
+        StudentName = studentName;
     }
 
     public double getGrade_15_1() {
@@ -88,19 +78,19 @@ public class score {
         this.grade_45_2 = grade_45_2;
     }
 
-    public double getGiuaki() {
-        return giuaki;
+    public double getMidterm() {
+        return Midterm;
     }
 
-    public void setGiuaki(double giuaki) {
-        this.giuaki = giuaki;
+    public void setMidterm(double midterm) {
+        Midterm = midterm;
     }
 
-    public double getCuoiki() {
-        return cuoiki;
+    public double getFinal() {
+        return Final;
     }
 
-    public void setCuoiki(double cuoiki) {
-        this.cuoiki = cuoiki;
+    public void setFinal(double aFinal) {
+        Final = aFinal;
     }
 }
