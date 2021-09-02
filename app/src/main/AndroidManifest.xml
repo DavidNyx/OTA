@@ -11,16 +11,17 @@
         android:roundIcon="@mipmap/ota1_icon"
         android:supportsRtl="true"
         android:theme="@style/Theme.OTA">
-        <activity android:name=".MainActivity"/>
-        <activity android:name=".EditAttendance"></activity>
+        <activity android:name=".EditGrade"></activity>
+        <activity android:name=".MainActivity" />
+        <activity android:name=".EditAttendance" />
         <activity android:name=".StudentActivity" />
         <activity android:name=".ParentsActivity" />
         <activity android:name=".AdministratorActivity" />
         <activity android:name=".TeacherActivity" />
         <activity android:name=".AttendanceActivity" />
-        <activity android:name=".grade" />
+        <activity android:name=".Grade.grade" />
         <activity android:name=".Email" />
-        <activity android:name=".FeeActivity"/>
+        <activity android:name=".Fee.FeeActivity" />
         <activity android:name=".SplashScreen">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

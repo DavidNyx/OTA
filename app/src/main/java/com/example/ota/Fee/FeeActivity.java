@@ -1,4 +1,4 @@
-package com.example.ota;
+package com.example.ota.Fee;
 
 import android.os.Bundle;
 import android.util.Log;
@@ -12,6 +12,9 @@ import com.android.volley.Request;
 import com.android.volley.Response;
 import com.android.volley.VolleyError;
 import com.android.volley.toolbox.JsonObjectRequest;
+import com.example.ota.Account;
+import com.example.ota.R;
+import com.example.ota.VolleySingleton;
 
 import org.json.JSONArray;
 import org.json.JSONException;
@@ -43,7 +46,7 @@ public class FeeActivity extends AppCompatActivity {
         JSONObject data = null;
         data = new JSONObject();
         try { // day la data truyen cho server
-            data.put("stuID",Account.account.getID());
+            data.put("stuID", Account.account.getID());
         } catch (JSONException e) {
             e.printStackTrace();
         }

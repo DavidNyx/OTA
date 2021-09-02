@@ -1,4 +1,4 @@
-package com.example.ota;
+package com.example.ota.Fee;
 
 public class fee {
     private String content;

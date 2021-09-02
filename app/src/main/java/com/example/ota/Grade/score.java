@@ -1,4 +1,4 @@
-package com.example.ota;
+package com.example.ota.Grade;
 
 public class score {
     private int SubId;
