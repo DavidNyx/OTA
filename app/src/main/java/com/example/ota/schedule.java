@@ -26,8 +26,7 @@ public class schedule extends AppCompatActivity {
     }
 
     public void auto() {
-        JSONObject data = null;
-        data = new JSONObject();
+        JSONObject data = new JSONObject();
         try {
             data.put(Account.account.getHeader(), Account.account.getID());
             //Toast.makeText(StudentActivity.this, data.toString(), Toast.LENGTH_SHORT).show();
@@ -46,14 +45,16 @@ public class schedule extends AppCompatActivity {
                             Toast.makeText(schedule.this, message, Toast.LENGTH_SHORT).show();
                             if(message.equals("Query successfully")) {
                                 JSONArray timetable=(JSONArray) response.get("timetable");
+                                //Toast.makeText(schedule.this, timetable.getJSONObject(0).toString(), Toast.LENGTH_SHORT).show();
                                 try{
                                     for(int i = 0; i<timetable.length(); i++){
+
                                         JSONObject obj = timetable.getJSONObject(i);
                                         String class_ =(String) obj.get("Class");
                                         String subName = (String) obj.get("Subject");
                                         String time = (String) obj.get("Time");
                                         String date = (String) obj.get("Day_Week");
-                                        int stt = (int) obj.get("STT");
+                                        int stt = Integer.valueOf(obj.get("STT").toString());
 
                                         String classID = "timetable_class";
                                         int resID = getResources().getIdentifier(classID, "id", getPackageName());
@@ -71,31 +72,31 @@ public class schedule extends AppCompatActivity {
                                             tv = findViewById(resID);
                                             tv.setText(subName);
                                         }
-                                        else if (date.equals("Thứ 3")){
+                                        if (date.equals("Thứ 3")){
                                             String subID = "timetable_tuesday_subject" + stt;
                                             resID = getResources().getIdentifier(subID, "id", getPackageName());
                                             tv = findViewById(resID);
                                             tv.setText(subName);
                                         }
-                                        else if (date.equals("Thứ 4")){
+                                        if (date.equals("Thứ 4")){
                                             String subID = "timetable_wednesday_subject" + stt;
                                             resID = getResources().getIdentifier(subID, "id", getPackageName());
                                             tv = findViewById(resID);
                                             tv.setText(subName);
                                         }
-                                        else if (date.equals("Thứ 5")){
+                                        if (date.equals("Thứ 5")){
                                             String subID = "timetable_thursday_subject" + stt;
                                             resID = getResources().getIdentifier(subID, "id", getPackageName());
                                             tv = findViewById(resID);
                                             tv.setText(subName);
                                         }
-                                        else if (date.equals("Thứ 6")){
+                                        if (date.equals("Thứ 6")){
                                             String subID = "timetable_friday_subject" + stt;
                                             resID = getResources().getIdentifier(subID, "id", getPackageName());
                                             tv = findViewById(resID);
                                             tv.setText(subName);
                                         }
-                                        else if (date.equals("Thứ 7")){
+                                        if (date.equals("Thứ 7")){
                                             String subID = "timetable_saturday_subject" + stt;
                                             resID = getResources().getIdentifier(subID, "id", getPackageName());
                                             tv = findViewById(resID);

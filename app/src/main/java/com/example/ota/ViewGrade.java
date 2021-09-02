@@ -90,7 +90,7 @@ public class ViewGrade extends AppCompatActivity {
         try{
             for(int i = 0; i<grade.length(); i++){
                 JSONObject obj = grade.getJSONObject(i);
-                //int SubId=(int) obj.get("SubId");
+                int SubId=(int) obj.get("SubId");
                 String SubName=(String) obj.get("SubName");
                 int grade_15_1=(int) obj.get("15phut_1");
                 int grade_15_2=(int) obj.get("15phut_2");
