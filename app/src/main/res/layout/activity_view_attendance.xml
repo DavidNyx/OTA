@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="horizontal"
+    android:layout_alignParentBottom="true"
+    android:layout_alignParentLeft="true"
+    android:layout_alignParentRight="true"
+    android:layout_alignParentTop="true"
+    tools:context=".ViewGrade.ViewGrade">
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <EditText
+            android:id="@+id/VA_SubjectName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="50dp"
+            android:ems="10"
+            android:hint="Subject Name"
+            android:inputType="textPersonName"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <EditText
+            android:id="@+id/VA_Class"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="30dp"
+            android:ems="10"
+            android:hint="Class"
+            android:inputType="textPersonName"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/VA_SubjectName" />
+
+        <Button
+            android:id="@+id/button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="165dp"
+            android:layout_marginTop="220dp"
+            android:text="Query"
+            android:background="@drawable/button"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:onClick="VA_Query"/>
+
+        <HorizontalScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="300dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <TableLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:stretchColumns="1,2,3,4,5,6,7,8,9,10,11">
+
+                <TableRow>
+
+                    <TextView
+                        android:id="@+id/StudentID_tv"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_column="1"
+                        android:gravity="center"
+                        android:padding="15dp"
+                        android:text="Student ID"
+                        android:textSize="16sp" />
+
+                    <TextView
+                        android:id="@+id/StudentName_tv"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_column="1"
+                        android:gravity="center"
+                        android:padding="15dp"
+                        android:text="@string/Student"
+                        android:textSize="16sp" />
+
+                    <TextView
+                        android:id="@+id/week_1_tv"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_column="1"
+                        android:gravity="center"
+                        android:padding="15dp"
+                        android:text="Week 1"
+                        android:textSize="16sp" />
+
+                    <TextView
+                        android:id="@+id/week_2_tv"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_column="1"
+                        android:gravity="center"
+                        android:padding="15dp"
+                        android:text="Week 2"
+                        android:textSize="16sp" />
+
+                    <TextView
+                        android:id="@+id/week_3_tv"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_column="1"
+                        android:gravity="center"
+                        android:padding="15dp"
+                        android:text="Week 3"
+                        android:textSize="16sp" />
+
+                    <TextView
+                        android:id="@+id/week_4_tv"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_column="1"
+                        android:gravity="center"
+                        android:padding="15dp"
+                        android:text="Week 4"
+                        android:textSize="16sp" />
+
+                    <TextView
+                        android:id="@+id/week_5_tv"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_column="1"
+                        android:gravity="center"
+                        android:padding="15dp"
+                        android:text="Week 5"
+                        android:textSize="16sp" />
+
+                    <TextView
+                        android:id="@+id/week_6_tv"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_column="1"
+                        android:gravity="center"
+                        android:padding="15dp"
+                        android:text="Week 6"
+                        android:textSize="16sp" />
+
+                    <TextView
+                        android:id="@+id/week_7_tv"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_column="1"
+                        android:gravity="center"
+                        android:padding="15dp"
+                        android:text="Week 7"
+                        android:textSize="16sp" />
+
+                    <TextView
+                        android:id="@+id/week_8_tv"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_column="1"
+                        android:gravity="center"
+                        android:padding="15dp"
+                        android:text="Week 8"
+                        android:textSize="16sp" />
+
+                    <TextView
+                        android:id="@+id/week_9_tv"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_column="1"
+                        android:gravity="center"
+                        android:padding="15dp"
+                        android:text="Week 9"
+                        android:textSize="16sp" />
+
+                    <TextView
+                        android:id="@+id/week_10_tv"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_column="1"
+                        android:gravity="center"
+                        android:padding="15dp"
+                        android:text="Week 10"
+                        android:textSize="16sp" />
+                </TableRow>
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/recycler_view"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" />
+            </TableLayout>
+        </HorizontalScrollView>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

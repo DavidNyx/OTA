@@ -12,6 +12,7 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.OTA">
         <activity android:name=".ViewGrade.ViewGrade"></activity>
+        <activity android:name=".ViewAttendance.ViewAttendance"></activity>
         <activity android:name=".EditGrade" />
         <activity android:name=".AttendanceMenu" />
         <activity android:name=".MainActivity" />

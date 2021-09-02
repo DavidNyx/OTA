@@ -12,6 +12,7 @@ import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
 import com.example.ota.Attendance.AttendanceActivity;
+import com.example.ota.ViewAttendance.ViewAttendance;
 
 
 public class AttendanceMenu extends AppCompatActivity {
@@ -39,7 +40,7 @@ public class AttendanceMenu extends AppCompatActivity {
     }
 
     public void onClickViewAttendance(View view){
-        startActivity(new Intent(AttendanceMenu.this, AttendanceActivity.class));
+        startActivity(new Intent(AttendanceMenu.this, ViewAttendance.class));
     }
 
     public void onClickEditAttendance(View view){
