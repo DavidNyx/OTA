@@ -85,14 +85,14 @@ public class grade extends AppCompatActivity {
                 JSONObject obj = grade.getJSONObject(i);
                 int SubId=(int) obj.get("SubId");
                 String SubName=(String) obj.get("SubName");
-                int grade_15_1=(int) obj.get("15phut_1");
-                int grade_15_2=(int) obj.get("15phut_2");
-                int grade_15_3=(int) obj.get("15phut_3");
-                int grade_15_4=(int) obj.get("15phut_4");
-                int grade_45_1=(int) obj.get("45phut_1");
-                int grade_45_2=(int) obj.get("45phut_2");
-                int giuaki=(int) obj.get("giuaki");
-                int cuoiki=(int) obj.get("cuoiki");
+                double grade_15_1= Double.valueOf(obj.get("15phut_1").toString());
+                double grade_15_2=Double.valueOf(obj.get("15phut_2").toString());
+                double grade_15_3=Double.valueOf(obj.get("15phut_3").toString());
+                double grade_15_4=Double.valueOf(obj.get("15phut_4").toString());
+                double grade_45_1=Double.valueOf(obj.get("45phut_1").toString());
+                double grade_45_2=Double.valueOf(obj.get("45phut_2").toString());;
+                double giuaki=Double.valueOf(obj.get("giuaki").toString());;
+                double cuoiki=Double.valueOf(obj.get("cuoiki").toString());;
                 score_list.add(new score(SubId,SubName,grade_15_1,grade_15_2,grade_15_3,grade_15_4,grade_45_1,grade_45_2,giuaki,cuoiki));
             }
         }catch (JSONException e) {
