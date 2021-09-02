@@ -1,8 +1,5 @@
 package com.example.ota;
 
-import androidx.annotation.NonNull;
-import androidx.appcompat.app.AppCompatActivity;
-
 import android.content.Intent;
 import android.graphics.Color;
 import android.graphics.drawable.ColorDrawable;
@@ -10,14 +7,17 @@ import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
-import android.widget.Toast;
 
-public class TeacherActivity extends AppCompatActivity {
+import androidx.annotation.NonNull;
+import androidx.appcompat.app.AppCompatActivity;
+
+
+public class AttendanceMenu extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_teacher);
-        getSupportActionBar().setTitle(R.string.Teacher);
+        setContentView(R.layout.activity_attendance_menu);
+        getSupportActionBar().setTitle(R.string.Attendance);
         getSupportActionBar().setBackgroundDrawable(new ColorDrawable(Color.parseColor("#e600ff")));
     }
     @Override
@@ -36,17 +36,12 @@ public class TeacherActivity extends AppCompatActivity {
         return super.onOptionsItemSelected(item);
     }
 
-    public void onClickLogout(View view){
-        Toast.makeText(this, R.string.logOutSuccess, Toast.LENGTH_SHORT).show();
-        startActivity(new Intent(TeacherActivity.this, MainActivity.class));
+    public void onClickViewAttendance(View view){
+        startActivity(new Intent(AttendanceMenu.this, AttendanceActivity.class));
     }
 
-    public void onClickAttendance(View view){
-        startActivity(new Intent(TeacherActivity.this, AttendanceMenu.class));
+    public void onClickEditAttendance(View view){
+        startActivity(new Intent(AttendanceMenu.this, EditAttendance.class));
     }
 
-    public void EditGradeButton(View view){
-        startActivity(new Intent(TeacherActivity.this, EditGrade.class));
-
-    }
 }

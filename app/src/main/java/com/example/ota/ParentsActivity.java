@@ -47,4 +47,10 @@ public class ParentsActivity extends AppCompatActivity {
     public void onClickAbsentLetter(View view){
         startActivity(new Intent(ParentsActivity.this, Email.class));
     }
+    public void onClickAttendance(View view){
+        startActivity(new Intent(ParentsActivity.this, AttendanceActivity.class));
+    }
+    public void onClickViewSchedule(View view){
+        startActivity(new Intent(ParentsActivity.this, schedule.class));
+    }
 }

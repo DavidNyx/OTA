@@ -25,7 +25,7 @@ public class StudentActivity extends AppCompatActivity {
         getSupportActionBar().setBackgroundDrawable(new ColorDrawable(Color.parseColor("#e600ff")));
     }
 
-    /*public void onClickViewSchedule(View view) {
+    /*public void onClickViewSchedule(View view {
 
         setContentView(R.layout.schedule);
         JSONObject data = null;

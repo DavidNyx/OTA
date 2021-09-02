@@ -29,13 +29,13 @@ public class schedule extends AppCompatActivity {
         JSONObject data = null;
         data = new JSONObject();
         try {
-            data.put("stuID", Account.account.getID());
+            data.put(Account.account.getHeader(), Account.account.getID());
             //Toast.makeText(StudentActivity.this, data.toString(), Toast.LENGTH_SHORT).show();
         } catch (JSONException e) {
             e.printStackTrace();
         }
         Log.d("a",data.toString());
-        final String url = "https://ota-be-server.herokuapp.com/students/timetable/";
+        final String url = Account.account.getURL() + "timetable/";
         JsonObjectRequest jsonObjectRequest = new JsonObjectRequest(Request.Method.POST, url, data,
                 new Response.Listener<JSONObject>() {
                     @Override
@@ -44,7 +44,7 @@ public class schedule extends AppCompatActivity {
                             Log.d("b",response.toString());
                             String message=response.getString("message");
                             Toast.makeText(schedule.this, message, Toast.LENGTH_SHORT).show();
-                            if(message.equals("Query successfully")==true) {
+                            if(message.equals("Query successfully")) {
                                 JSONArray timetable=(JSONArray) response.get("timetable");
                                 try{
                                     for(int i = 0; i<timetable.length(); i++){

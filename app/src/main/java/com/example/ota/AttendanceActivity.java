@@ -50,11 +50,11 @@ public class AttendanceActivity extends AppCompatActivity {
     public void auto(){
         JSONObject data = new JSONObject();
         try { // day la data truyen cho server
-            data.put("stuID",Account.account.getID());
+            data.put(Account.account.getHeader(),Account.account.getID());
         } catch (JSONException e) {
             e.printStackTrace();
         }
-        final String url = "https://ota-be-server.herokuapp.com/students/attendance/";
+        final String url = Account.account.getURL() + "attendance/";
         JsonObjectRequest jsonObjectRequest = new JsonObjectRequest(Request.Method.POST, url, data,
                 new Response.Listener<JSONObject>() {
                     @Override

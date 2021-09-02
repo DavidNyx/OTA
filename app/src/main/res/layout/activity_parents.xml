@@ -23,7 +23,8 @@
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.498"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent" />
+            app:layout_constraintTop_toTopOf="parent"
+            android:onClick="onClickViewSchedule"/>
 
         <Button
             android:id="@+id/attendanceButton"
@@ -37,7 +38,8 @@
             android:textStyle="bold"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@id/classScheduleButton" />
+            app:layout_constraintTop_toBottomOf="@id/classScheduleButton"
+            android:onClick="onClickAttendance"/>
 
         <Button
             android:id="@+id/gradeButton"
