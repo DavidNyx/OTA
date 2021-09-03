@@ -53,12 +53,18 @@ public class ViewGrade extends AppCompatActivity {
         EditText Class=findViewById(R.id.VG_Class);
         JSONObject data = null;
         data = new JSONObject();
-        try {
-            data.put("id",Account.account.getID());
-            data.put("class",Class.getText().toString());
-            data.put("subjectName",SubjectName.getText().toString());
-        } catch (JSONException e) {
-            e.printStackTrace();
+        if(Class.getText().toString().isEmpty())
+            Toast.makeText(ViewGrade.this, "Class is empty. Please enter class to continue.", Toast.LENGTH_SHORT).show();
+        else if(SubjectName.getText().toString().isEmpty())
+            Toast.makeText(ViewGrade.this, "Subject Name is empty. Please enter Subject Name to continue.", Toast.LENGTH_SHORT).show();
+        else {
+            try {
+                data.put("id",Account.account.getID());
+                data.put("class",Class.getText().toString());
+                data.put("subjectName",SubjectName.getText().toString());
+            } catch (JSONException e) {
+                e.printStackTrace();
+            }
         }
         final String url = Account.account.getURL() + "viewgrade/";
         JsonObjectRequest jsonObjectRequest = new JsonObjectRequest(Request.Method.POST, url, data,
@@ -83,6 +89,7 @@ public class ViewGrade extends AppCompatActivity {
             public void onErrorResponse(VolleyError error) {
                 String message=error.toString();
                 Log.d("c",message);
+                Toast.makeText(ViewGrade.this, "Error", Toast.LENGTH_SHORT).show();
             }
         });
         VolleySingleton.getInstance(this).getRequestQueue().add(jsonObjectRequest);
