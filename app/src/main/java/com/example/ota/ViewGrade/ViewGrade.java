@@ -4,6 +4,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
@@ -15,6 +16,8 @@ import com.android.volley.Response;
 import com.android.volley.VolleyError;
 import com.android.volley.toolbox.JsonObjectRequest;
 import com.example.ota.Account;
+import com.example.ota.AttendanceMenu;
+import com.example.ota.ViewAttendance.ViewAttendance;
 import com.example.ota.ViewGrade.GradeModel;
 import com.example.ota.ViewGrade.GradeAdapter;
 import com.example.ota.R;
@@ -30,7 +33,6 @@ import java.util.List;
 public class ViewGrade extends AppCompatActivity {
 
     RecyclerView recycler_view;
-    GradeAdapter adapter;
     List<GradeModel> data;
 
     @Override
@@ -43,7 +45,7 @@ public class ViewGrade extends AppCompatActivity {
         recycler_view.setHasFixedSize(true);
         LinearLayoutManager linearLayoutManager=new LinearLayoutManager(this);
         recycler_view.setLayoutManager(linearLayoutManager);
-        adapter = new GradeAdapter(this,data);
+        GradeAdapter adapter = new GradeAdapter(this,data);
         recycler_view.setAdapter(adapter);
     }
     public void VG_Query(View view){
@@ -81,7 +83,6 @@ public class ViewGrade extends AppCompatActivity {
             public void onErrorResponse(VolleyError error) {
                 String message=error.toString();
                 Log.d("c",message);
-                Toast.makeText(ViewGrade.this, error.getMessage(), Toast.LENGTH_SHORT).show();
             }
         });
         VolleySingleton.getInstance(this).getRequestQueue().add(jsonObjectRequest);
