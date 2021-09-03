@@ -71,9 +71,7 @@ public class Email extends AppCompatActivity {
                     }, new Response.ErrorListener() {
                 @Override
                 public void onErrorResponse(VolleyError error) {
-                    String message = error.toString();
-                    Log.d("c", message);
-                    Toast.makeText(Email.this, message, Toast.LENGTH_SHORT).show();
+                    Toast.makeText(Email.this, "Error", Toast.LENGTH_SHORT).show();
                 }
             });
             VolleySingleton.getInstance(this).getRequestQueue().add(jsonObjectRequest);

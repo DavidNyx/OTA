@@ -71,9 +71,7 @@ public class grade extends AppCompatActivity {
                     }, new Response.ErrorListener() {
                 @Override
                 public void onErrorResponse(VolleyError error) {
-                    String message=error.toString();
-                    Log.d("c",message);
-                    Toast.makeText(grade.this, error.getMessage(), Toast.LENGTH_SHORT).show();
+                    Toast.makeText(grade.this, "Error", Toast.LENGTH_SHORT).show();
                 }
             });
             VolleySingleton.getInstance(this).getRequestQueue().add(jsonObjectRequest);

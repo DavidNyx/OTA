@@ -70,9 +70,7 @@ public class FeeActivity extends AppCompatActivity {
                 }, new Response.ErrorListener() {
             @Override
             public void onErrorResponse(VolleyError error) {
-                String message=error.toString();
-                Log.d("c",message);
-                Toast.makeText(FeeActivity.this, error.getMessage(), Toast.LENGTH_SHORT).show();
+                Toast.makeText(FeeActivity.this, "Error", Toast.LENGTH_SHORT).show();
             }
         });
         VolleySingleton.getInstance(this).getRequestQueue().add(jsonObjectRequest);

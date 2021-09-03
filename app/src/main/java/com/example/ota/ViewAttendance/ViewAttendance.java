@@ -79,9 +79,7 @@ public class ViewAttendance extends AppCompatActivity {
                 }, new Response.ErrorListener() {
             @Override
             public void onErrorResponse(VolleyError error) {
-                String message=error.toString();
-                Log.d("c",message);
-                Toast.makeText(ViewAttendance.this, error.getMessage(), Toast.LENGTH_SHORT).show();
+                Toast.makeText(ViewAttendance.this, "Error", Toast.LENGTH_SHORT).show();
             }
         });
         VolleySingleton.getInstance(this).getRequestQueue().add(jsonObjectRequest);

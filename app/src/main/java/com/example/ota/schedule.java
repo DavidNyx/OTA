@@ -116,10 +116,7 @@ public class schedule extends AppCompatActivity {
                 }, new Response.ErrorListener() {
             @Override
             public void onErrorResponse(VolleyError error) {
-                String message=error.toString();
-                Toast.makeText(schedule.this, message, Toast.LENGTH_SHORT).show();
-                Log.d("c",message);
-                //Toast.makeText(MainActivity.this, error.getMessage(), Toast.LENGTH_SHORT).show();
+                Toast.makeText(schedule.this, "Error", Toast.LENGTH_SHORT).show();
             }
         });
         VolleySingleton.getInstance(this).getRequestQueue().add(jsonObjectRequest);
