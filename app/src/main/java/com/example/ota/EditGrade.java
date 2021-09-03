@@ -2,6 +2,7 @@ package com.example.ota;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
@@ -34,48 +35,54 @@ public class EditGrade extends AppCompatActivity {
         EditText EG_Test6 = findViewById(R.id.EG_Test6);
         EditText EG_Test7 = findViewById(R.id.EG_Test7);
         EditText EG_Test8 = findViewById(R.id.EG_Test8);
-
-        JSONObject data=new JSONObject();
-        try { // day la data truyen cho server
-            data.put("TeacherID",Account.account.getID());
-            data.put("subjectName",EG_Subject.getText().toString());
-            data.put("StudentID",EG_ID.getText().toString());
-            data.put("test1",check(EG_Test1));
-            data.put("test2",check(EG_Test2));
-            data.put("test3",check(EG_Test3));
-            data.put("test4",check(EG_Test4));
-            data.put("test5",check(EG_Test5));
-            data.put("test6",check(EG_Test6));
-            data.put("test7",check(EG_Test7));
-            data.put("test8",check(EG_Test8));
-            Log.d("h",data.toString());
-        } catch (JSONException e) {
-            e.printStackTrace();
+        if (EG_ID.getText().toString().equals("") || EG_Subject.getText().toString().equals(""))
+        {
+            Toast.makeText(this, "Missing Student ID or Subject, please try again", Toast.LENGTH_SHORT).show();
         }
-        final String url = "https://ota-be-server.herokuapp.com/teachers/editgrade/";
-        JsonObjectRequest jsonObjectRequest = new JsonObjectRequest(Request.Method.POST, url, data,
-                new Response.Listener<JSONObject>() {
-                    @Override
-                    public void onResponse(JSONObject response) {
-                        try {
-                            Log.d("b",response.toString());
-                            String message=response.getString("message");
-                            Toast.makeText(EditGrade.this, message, Toast.LENGTH_SHORT).show();
-                        }catch(JSONException e) {
-                            e.printStackTrace();
-                        }
-                    }
-                }, new Response.ErrorListener() {
-            @Override
-            public void onErrorResponse(VolleyError error) {
-                String message=error.toString();
-                Log.d("c",message);
-                Toast.makeText(EditGrade.this, message, Toast.LENGTH_SHORT).show();
+        else {
+            JSONObject data = new JSONObject();
+            try { // day la data truyen cho server
+                data.put("TeacherID", Account.account.getID());
+                data.put("subjectName", EG_Subject.getText().toString());
+                data.put("StudentID", EG_ID.getText().toString());
+                data.put("test1", check(EG_Test1));
+                data.put("test2", check(EG_Test2));
+                data.put("test3", check(EG_Test3));
+                data.put("test4", check(EG_Test4));
+                data.put("test5", check(EG_Test5));
+                data.put("test6", check(EG_Test6));
+                data.put("test7", check(EG_Test7));
+                data.put("test8", check(EG_Test8));
+                Log.d("h", data.toString());
+            } catch (JSONException e) {
+                e.printStackTrace();
             }
-        });
-        VolleySingleton.getInstance(this).getRequestQueue().add(jsonObjectRequest);
+            final String url = "https://ota-be-server.herokuapp.com/teachers/editgrade/";
+            JsonObjectRequest jsonObjectRequest = new JsonObjectRequest(Request.Method.POST, url, data,
+                    new Response.Listener<JSONObject>() {
+                        @Override
+                        public void onResponse(JSONObject response) {
+                            try {
+                                Log.d("b", response.toString());
+                                String message = response.getString("message");
+                                Toast.makeText(EditGrade.this, message, Toast.LENGTH_SHORT).show();
+                            } catch (JSONException e) {
+                                e.printStackTrace();
+                            }
+                        }
+                    }, new Response.ErrorListener() {
+                @Override
+                public void onErrorResponse(VolleyError error) {
+                    Toast.makeText(EditGrade.this, "Error", Toast.LENGTH_SHORT).show();
+                }
+            });
+            VolleySingleton.getInstance(this).getRequestQueue().add(jsonObjectRequest);
+        }
     }
+
     public double check(EditText text){
+        if(text.getText().toString().equals("")==true)
+            return -1;
         double temp= Double.valueOf(text.getText().toString());
         if(temp>=0&&temp<=10)
             return temp;
