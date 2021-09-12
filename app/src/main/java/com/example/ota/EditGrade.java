@@ -63,7 +63,6 @@ public class EditGrade extends AppCompatActivity {
                         @Override
                         public void onResponse(JSONObject response) {
                             try {
-                                Log.d("b", response.toString());
                                 String message = response.getString("message");
                                 Toast.makeText(EditGrade.this, message, Toast.LENGTH_SHORT).show();
                             } catch (JSONException e) {

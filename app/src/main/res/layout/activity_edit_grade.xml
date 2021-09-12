@@ -244,7 +244,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="165dp"
-            android:layout_marginTop="650dp"
+            android:layout_marginTop="580dp"
             android:background="@drawable/button"
             android:onClick="EG_Submit"
             android:text="SUBMIT"
